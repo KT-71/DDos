@@ -234,7 +234,19 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /(此頁面不存在)|(你已檢舉此推文)/);
+                elements = await findElementsByText(driver, By.css(`span`), `你已檢舉此推文`);
+                if (!elements[0]) { return; }
+
+                elements = await findElementsByText(driver, By.css(`span`), `查看`);
+                if (!elements[0]) { return; }
+
+                await sleep(delay);
+                await elements[0].click().catch(console.log);
+                await sleep(delay);
+            })();
+
+            await (async () => {
+                elements = await findElementsByText(driver, By.css(`span`), `此頁面不存在`);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
