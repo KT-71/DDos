@@ -1,0 +1,10 @@
+
+.vscode
+
+node_modules/
+node-v16.17.1-win-x86/
+node-v16.17.1-win-x86.zip
+
+chromedriver.exe
+chromedriver_win32.zip
+.wget-hsts
