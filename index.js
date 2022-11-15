@@ -203,7 +203,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), `/^(帳戶已停用)|(此帳戶不存在)$/`);
+                elements = await findElementsByText(driver, By.css(`span`), /(帳戶已停用)|(此帳戶不存在)/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
