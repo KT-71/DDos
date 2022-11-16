@@ -3,6 +3,7 @@ const { Builder, By } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
 // fs
 const fs = require('fs');
+const child_process = require('child_process');
 // sleep
 global.sleep = (ms) => { return new Promise(resolve => setTimeout(resolve, ms + parseInt(Math.random() * 500))); }
 
@@ -43,16 +44,6 @@ const filterElementByText = async (element, text) => {
 // bot logic
 const initBotChrome = async (login, targets, realUsername) => {
     const delay = 350;
-
-    // 非正常終止程式會殘留記錄檔, 強制清除
-    {
-        const TEMP = process.env.TMP || process.env.TEMP;
-        for (let dir of fs.readdirSync(TEMP)) {
-            if (!dir.startsWith(`scoped_dir`) || !fs.lstatSync(`${TEMP}\\${dir}`).isDirectory()) { continue; }
-
-            fs.rmdirSync(`${TEMP}\\${dir}`, { recursive: true, force: true });
-        }
-    }
 
     // chrome
     let chromeOptions = new chrome.Options();
@@ -419,6 +410,73 @@ const initBotChrome = async (login, targets, realUsername) => {
 
 const main = async () => {
 
+    // 非正常終止程式會殘留記錄檔, 強制清除
+    {
+        const TEMP = process.env.TMP || process.env.TEMP;
+        for (let dir of fs.readdirSync(TEMP)) {
+            if (!dir.startsWith(`scoped_dir`) || !fs.lstatSync(`${TEMP}\\${dir}`).isDirectory()) { continue; }
+
+            fs.rmdirSync(`${TEMP}\\${dir}`, { recursive: true, force: true });
+        }
+    }
+
+    // test run for check chrome version
+    const chromeOptions = new chrome.Options(); chromeOptions.headless();
+    let driver = await new Builder().forBrowser('chrome')
+        .setChromeOptions(chromeOptions).build()
+        .catch((e) => (e));
+    if (driver.constructor?.name == `SessionNotCreatedError`) {
+        // error message
+        let message = driver.message;
+        let match = message.match(/Current browser version is (\d+)\./i);
+        let url = null;
+        if (match) {
+            let [, version] = match; version = parseInt(version);
+            url = version == 107 ? `107.0.5304.62` :
+                version == 106 ? `106.0.5249.61` : null
+        }
+
+        // download right version chromedriver
+        if (url) {
+            url = `https://chromedriver.storage.googleapis.com/${url}/chromedriver_win32.zip`;
+
+            let batch = [
+                `@echo off`, `setlocal`,
+                `del chromedriver.exe`, `del chromedriver_win32.zip`,
+                `wget.exe ${url}`,
+                `Call :UnZipFile "%~dp0" "%~dp0chromedriver_win32.zip"`,
+                `del chromedriver_win32.zip`, `exit /b`,
+                `:UnZipFile <ExtractTo> <newzipfile>`,
+                `set vbs="%temp%\\_.vbs"`,
+                `if exist %vbs% del /f /q %vbs%`,
+                `>%vbs%  echo Set fso = CreateObject("Scripting.FileSystemObject")`,
+                `>>%vbs% echo If NOT fso.FolderExists(%1) Then`,
+                `>>%vbs% echo fso.CreateFolder(%1)`,
+                `>>%vbs% echo End If`,
+                `>>%vbs% echo set objShell = CreateObject("Shell.Application")`,
+                `>>%vbs% echo set FilesInZip=objShell.NameSpace(%2).items`,
+                `>>%vbs% echo objShell.NameSpace(%1).CopyHere(FilesInZip)`,
+                `>>%vbs% echo Set fso = Nothing`,
+                `>>%vbs% echo Set objShell = Nothing`,
+                `cscript //nologo %vbs%`,
+                `if exist %vbs% del /f /q %vbs%`
+            ].join('\n');
+
+            try {
+                fs.writeFileSync(`./temp.bat`, batch);
+                child_process.execSync(`temp.bat`).toString();
+                fs.unlinkSync(`./temp.bat`)
+            } catch (e) {
+                console.log(e);
+            }
+
+        } else { console.log(message) }
+
+    } else {
+        await driver.quit();
+    }
+
+
     // main var
     const { logins } = require(`./config/login.js`);
     const { targets, realUsername } = require(`./config/targets.js`);
@@ -426,7 +484,6 @@ const main = async () => {
     for (let login of logins) {
         doneList = doneList.concat(await initBotChrome(login, targets, realUsername));
     }
-
 
     console.clear();
     console.log(`批次檢舉已完成, 本次檢舉內容: `)
