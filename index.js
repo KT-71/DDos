@@ -47,7 +47,7 @@ const initBotChrome = async (login, targets, realUsername) => {
 
     // chrome
     let chromeOptions = new chrome.Options();
-    chromeOptions.addArguments('--window-size=1024,768');
+    chromeOptions.addArguments('--window-size=800,600');
     // chromeOptions.addArguments('User-Agent=Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; BLA-AL00 Build/HUAWEIBLA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.9 Mobile Safari/537.36')
 
     // tab page
@@ -146,19 +146,30 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
         }
 
+        // logout
+        if (url == `https://twitter.com/logout`) {
+            elements = await findElementsByText(driver, By.css(`span`), /^登出$/);
+            if (!elements[0]) { return; }
+
+            await sleep(delay);
+            await elements[0].click().catch(console.log);
+            await sleep(5000);
+            
+            await driver.quit();
+            return doneList;
+        }
+
         // idle...
         if (target == null && waitList.length > 0 &&
             loginStatus == 2 && url != `https://twitter.com/i/flow/login`) {
             // pop target url
-            target = waitList.pop();
+            target = waitList.shift();
             if (target) { await driver.get(target); }
         }
 
         // all done
         if (target == null && waitList.length == 0) {
-
-            await driver.quit();
-            return doneList;
+            await driver.get(`https://twitter.com/logout`);
         }
 
         // fake user
@@ -280,7 +291,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /^假裝成他們$/);
+                elements = await findElementsByText(driver, By.css(`span`), /^(濫用推標)|(假裝成他們)/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
@@ -337,7 +348,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /^冒充他人$/);
+                elements = await findElementsByText(driver, By.css(`span`), /^你似乎想要因違反/);
                 if (!elements[0]) { return; }
 
                 elements = await findElementsByText(driver, By.css(`span`), /繼續$/);
@@ -373,34 +384,6 @@ const initBotChrome = async (login, targets, realUsername) => {
 
                 doneList.push(target);
                 target = null;
-            })();
-
-            await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /^濫用推標/);
-                if (!elements[0]) { return; }
-
-                await sleep(delay);
-                await elements[0].click().catch(console.log);
-                await sleep(delay);
-
-                elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
-                if (!elements[0]) { return; }
-
-                await sleep(delay);
-                await elements[0].click().catch(console.log);
-                await sleep(delay);
-            })();
-
-            await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /^你似乎想要因違反/);
-                if (!elements[0]) { return; }
-
-                elements = await findElementsByText(driver, By.css(`span`), /繼續$/);
-                if (!elements[0]) { return; }
-
-                await sleep(delay);
-                await elements[0].click().catch(console.log);
-                await sleep(delay);
             })();
         }
 
