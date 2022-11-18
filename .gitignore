@@ -1,6 +1,8 @@
 
 .vscode
 
+config/login.js
+
 node_modules/
 node-v16.17.1-win-x86/
 node-v16.17.1-win-x86.zip
