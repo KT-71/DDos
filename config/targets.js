@@ -17,7 +17,7 @@ module.exports = {
 
         // `https://twitter.com/tishnf2`,
 
-        `https://twitter.com/denote17494172`,
+        // `https://twitter.com/denote17494172`,
         // `https://twitter.com/denote17494172/status/1592399730868649985`,
         // `https://twitter.com/denote17494172/status/1592399234472742913`,
 
@@ -29,8 +29,16 @@ module.exports = {
         `https://twitter.com/kis_krrrri/status/1593203894427189248`,
         `https://twitter.com/kis_krrrri/status/1593329867843682306`,
         `https://twitter.com/kis_krrrri/status/1593394401392431111`,
+        `https://twitter.com/kis_krrrri/status/1593523672903389185`,
+        `https://twitter.com/kis_krrrri/status/1593574418244329473`,
+        `https://twitter.com/kis_krrrri/status/1593887414241660928`,
 
-        `https://twitter.com/REI92648622`,
-        `https://twitter.com/REI92648622/status/1592517065034067968`,
+        // `https://twitter.com/REI92648622`,
+        // `https://twitter.com/REI92648622/status/1592517065034067968`,
     ]
 }
+
+
+
+
+

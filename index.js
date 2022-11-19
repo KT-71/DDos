@@ -154,7 +154,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             await sleep(delay);
             await elements[0].click().catch(console.log);
             await sleep(5000);
-            
+
             await driver.quit();
             return doneList;
         }
@@ -236,7 +236,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), `此頁面不存在`);
+                elements = await findElementsByText(driver, By.css(`span`), /(此頁面不存在)|(此推文來自遭到停用的帳戶)/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
