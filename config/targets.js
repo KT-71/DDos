@@ -5,8 +5,8 @@ module.exports = {
 
     // fake user
     targets: [
-        `https://twitter.com/kls_kirrrrrr`,
-        `https://twitter.com/kls_kirrrrrr/status/1589102320914419712`,
+        // `https://twitter.com/kls_kirrrrrr`,
+        // `https://twitter.com/kls_kirrrrrr/status/1589102320914419712`,
 
         `https://twitter.com/least57`,
         
@@ -21,8 +21,8 @@ module.exports = {
         // `https://twitter.com/denote17494172/status/1592399730868649985`,
         // `https://twitter.com/denote17494172/status/1592399234472742913`,
 
-        `https://twitter.com/ke445nl2`,
-        `https://twitter.com/ke445nl2/status/1593028905333854210`,
+        // `https://twitter.com/ke445nl2`,
+        // `https://twitter.com/ke445nl2/status/1593028905333854210`,
         
         `https://twitter.com/kis_krrrri`,
         `https://twitter.com/kis_krrrri/status/1593131886582595584`,
@@ -35,6 +35,10 @@ module.exports = {
 
         // `https://twitter.com/REI92648622`,
         // `https://twitter.com/REI92648622/status/1592517065034067968`,
+
+        `https://twitter.com/XIfKIKRmFCEY5Wz`,
+        `https://twitter.com/XIfKIKRmFCEY5Wz/status/1595114784638513154`,
+        `https://twitter.com/XIfKIKRmFCEY5Wz/status/1595113583079469058`,
     ]
 }
 
