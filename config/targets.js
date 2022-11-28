@@ -1,4 +1,3 @@
-
 module.exports = {
     
     realUsername: `kis_kirrrrrr`,   // real user's username
@@ -8,12 +7,12 @@ module.exports = {
         // `https://twitter.com/kls_kirrrrrr`,
         // `https://twitter.com/kls_kirrrrrr/status/1589102320914419712`,
 
-        `https://twitter.com/least57`,
+        // `https://twitter.com/least57`,
         
-        `https://twitter.com/kis_klrrrrr`,
-        `https://twitter.com/kis_klrrrrr/status/1591770511281115138`,
-        `https://twitter.com/kis_klrrrrr/status/1591540371557081088`,
-        `https://twitter.com/kis_klrrrrr/status/1591269345438892032`,
+        // `https://twitter.com/kis_klrrrrr`,
+        // `https://twitter.com/kis_klrrrrr/status/1591770511281115138`,
+        // `https://twitter.com/kis_klrrrrr/status/1591540371557081088`,
+        // `https://twitter.com/kis_klrrrrr/status/1591269345438892032`,
 
         // `https://twitter.com/tishnf2`,
 
@@ -36,12 +35,17 @@ module.exports = {
         // `https://twitter.com/REI92648622`,
         // `https://twitter.com/REI92648622/status/1592517065034067968`,
 
-        `https://twitter.com/XIfKIKRmFCEY5Wz`,
-        `https://twitter.com/XIfKIKRmFCEY5Wz/status/1595114784638513154`,
-        `https://twitter.com/XIfKIKRmFCEY5Wz/status/1595113583079469058`,
+        // `https://twitter.com/XIfKIKRmFCEY5Wz`,
+        // `https://twitter.com/XIfKIKRmFCEY5Wz/status/1595114784638513154`,
+        // `https://twitter.com/XIfKIKRmFCEY5Wz/status/1595113583079469058`,
+
+        `https://twitter.com/Japan18420827`,
+        `https://twitter.com/Japan18420827/status/1596870926343495688`,
+        `https://twitter.com/Japan18420827/status/1596869813703708674`,
+        `https://twitter.com/Japan18420827/status/1596899966383161345`,
+        `https://twitter.com/Japan18420827/status/1596941728808075264`,
     ]
 }
-
 
 
 
