@@ -1,18 +1,13 @@
 @echo off
 setlocal
 
-del chromedriver.exe
-del chromedriver_win32.zip
 rd /s /q .\node-v16.17.1-win-x86
 del node-v16.17.1-win-x86.zip
 
 echo Start download
-wget.exe https://chromedriver.storage.googleapis.com/108.0.5359.22/chromedriver_win32.zip
 wget.exe https://nodejs.org/download/release/v16.17.1/node-v16.17.1-win-x86.zip
 Call :UnZipFile "%~dp0" "%~dp0node-v16.17.1-win-x86.zip"
-Call :UnZipFile "%~dp0" "%~dp0chromedriver_win32.zip"
 
-del chromedriver_win32.zip
 del node-v16.17.1-win-x86.zip
 
 .\node-v16.17.1-win-x86\npm install selenium-webdriver
