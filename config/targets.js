@@ -31,6 +31,7 @@ module.exports = {
         `https://twitter.com/Japan18420827/status/1596941728808075264`,
         `https://twitter.com/Japan18420827/status/1596901839643246592`,
         `https://twitter.com/Japan18420827/status/1596899966383161345`,
+        `https://twitter.com/Japan18420827/status/1597578526231781376`,
 
         `https://twitter.com/b4AyFyB3fl0LjEH`,
         `https://twitter.com/b4AyFyB3fl0LjEH/status/1595338125890707456`,
