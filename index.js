@@ -64,7 +64,7 @@ const initBotChrome = async (login, targets, realUsername) => {
     let waitList = targets.filter(() => true);
     let target = null, doneList = [];
 
-    let elements = [], loginStatus = 0;
+    let elements = [], loginStatus = 0,refresh = 0;
     while (1) {
         let url = await driver.getCurrentUrl().catch(() => { });
 
@@ -199,7 +199,8 @@ const initBotChrome = async (login, targets, realUsername) => {
 
             await (async () => {
                 elements = await findElementsByText(driver, By.css(`span`), `檢舉 @`);
-                if (!elements[0]) { return; }
+                if (!elements[0]) { ++refresh; return; }
+                refresh = 0;
 
                 await sleep(delay);
                 await elements[0].click().catch(console.log);
@@ -230,7 +231,8 @@ const initBotChrome = async (login, targets, realUsername) => {
 
             await (async () => {
                 elements = await findElementsByText(driver, By.css(`span`), `檢舉推文`);
-                if (!elements[0]) { return; }
+                if (!elements[0]) { ++refresh; return; }
+                refresh = 0;
 
                 await sleep(delay);
                 await elements[0].click().catch(console.log);
@@ -258,6 +260,12 @@ const initBotChrome = async (login, targets, realUsername) => {
                 // doneList.push(target);
                 target = null;
             })();
+        }
+
+        // refresh page if login bug
+        if (loginStatus == 2 && url == target && refresh > 5) {
+            await driver.navigate().refresh();
+            refresh = 0;
         }
 
         // report page
