@@ -64,9 +64,9 @@ const initBotChrome = async (login, targets, realUsername) => {
     let waitList = targets.filter(() => true);
     let target = null, doneList = [];
 
-    let elements = [], loginStatus = 0,refresh = 0;
+    let elements = [], loginStatus = 0, refresh = 0;
     while (1) {
-        let url = await driver.getCurrentUrl().catch(() => { });
+        let url = await driver.getCurrentUrl().catch(() => { }) || 'null';
 
         await (async () => {
             if (!login.email) { return; }
@@ -263,9 +263,19 @@ const initBotChrome = async (login, targets, realUsername) => {
         }
 
         // refresh page if login bug
-        if (loginStatus == 2 && url == target && refresh > 5) {
+        if (loginStatus == 2 && refresh > 5) {
             await driver.navigate().refresh();
             refresh = 0;
+        }
+
+        // refresh page if username wrong
+        if (loginStatus == 2 && url != target && target && /https:\/\/twitter\.com\/\S+\/status\/\d+/.test(url)) {
+            let match1 = url.match(/https:\/\/twitter\.com\/\S+\/status\/(\d+)/i);
+            let match2 = target.match(/https:\/\/twitter\.com\/\S+\/status\/(\d+)/i);
+            if (!!match1 && !!match2 &&
+                match1[1] == match2[1]) {
+                target = url;
+            }
         }
 
         // report page
