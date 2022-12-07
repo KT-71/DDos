@@ -5,12 +5,6 @@ module.exports = {
     // fake user
     targets: [
         `https://twitter.com/Japan18420827`,
-        `https://twitter.com/Japan18420827/status/1597162664773701632`,
-        `https://twitter.com/Japan18420827/status/1597071678236168194`,
-        `https://twitter.com/Japan18420827/status/1596941728808075264`,
-        `https://twitter.com/Japan18420827/status/1596901839643246592`,
-        `https://twitter.com/Japan18420827/status/1596899966383161345`,
-        `https://twitter.com/Japan18420827/status/1597820148278521858`,
         `https://twitter.com/Japan18420827/status/1599706259804258304`,
         `https://twitter.com/Japan18420827/status/1599702904688226304`,
         `https://twitter.com/Japan18420827/status/1599349687576035329`,
@@ -26,17 +20,20 @@ module.exports = {
         `https://twitter.com/Japan18420827/status/1597918505495826432`,
         `https://twitter.com/Japan18420827/status/1597918054503313409`,
         `https://twitter.com/Japan18420827/status/1597820494933544960`,
+        `https://twitter.com/Japan18420827/status/1597820148278521858`,
         `https://twitter.com/Japan18420827/status/1597626290986971137`,
         `https://twitter.com/Japan18420827/status/1597578526231781376`,
         `https://twitter.com/Japan18420827/status/1597544824596418561`,
         `https://twitter.com/Japan18420827/status/1597205208429625345`,
         `https://twitter.com/Japan18420827/status/1597163587222777857`,
+        `https://twitter.com/Japan18420827/status/1597162664773701632`,
         `https://twitter.com/Japan18420827/status/1597122526710476800`,
+        `https://twitter.com/Japan18420827/status/1597071678236168194`,
+        `https://twitter.com/Japan18420827/status/1596941728808075264`,
+        `https://twitter.com/Japan18420827/status/1596901839643246592`,
+        `https://twitter.com/Japan18420827/status/1596899966383161345`,
 
-        `https://twitter.com/re664mraven49`,
-        `https://twitter.com/re664mraven49/status/1599837989730807809`,
-        `https://twitter.com/re664mraven49/status/1599709521416683521`,
-        `https://twitter.com/re664mraven49/status/1599438101008769025`,
+        `https://twitter.com/87T19`,
 
         `https://twitter.com/Vtuber02999910`,
 
