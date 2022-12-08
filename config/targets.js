@@ -43,6 +43,15 @@ module.exports = {
 
         `https://twitter.com/Kidnxxir`,
 
+        `https://twitter.com/rp1603049`,
+        `https://twitter.com/rp1603049/status/1600887928087273473`,
+        `https://twitter.com/rp1603049/status/1600878023183847424`,
+        `https://twitter.com/rp1603049/status/1600876243406442496`,
+        `https://twitter.com/rp1603049/status/1600842399479083008`,
+        `https://twitter.com/rp1603049/status/1600826296581652481`,
+        `https://twitter.com/rp1603049/status/1600818105415962624`,
+
+
 
     ]
 }
