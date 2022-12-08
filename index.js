@@ -82,6 +82,18 @@ const initBotChrome = async (login, targets, realUsername) => {
             await sleep(delay);
         })();
 
+        await (async () => {
+            elements = await findElementsByText(driver, By.css(`span`), `發生一些錯誤`);
+            if (!elements[0]) { return; }
+
+            elements = await findElementsByText(driver, By.css(`span`), /^確定$/);
+            if (!elements[0]) { return; }
+
+            await sleep(delay);
+            await elements[0].click().catch(console.log);
+            await sleep(delay);
+        })();
+
         // login page
         if (url == `https://twitter.com/i/flow/login`) {
             loginStatus = loginStatus || 1;
