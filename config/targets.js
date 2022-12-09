@@ -35,23 +35,16 @@ module.exports = {
 
         `https://twitter.com/87T19`,
 
+        `https://twitter.com/Kxxlv1xr`,
+        `https://twitter.com/Kxxlv1xr/status/1601133735487111169`,
+
         `https://twitter.com/Revok51939878`,
         `https://twitter.com/Revok51939878/status/1600704959380541446`,
         `https://twitter.com/Revok51939878/status/1600647273603600384`,
         `https://twitter.com/Revok51939878/status/1600575069658431560`,
         `https://twitter.com/Revok51939878/status/1600507590143868932`,
 
-        `https://twitter.com/Kidnxxir`,
-
-        `https://twitter.com/rp1603049`,
-        `https://twitter.com/rp1603049/status/1600887928087273473`,
-        `https://twitter.com/rp1603049/status/1600878023183847424`,
-        `https://twitter.com/rp1603049/status/1600876243406442496`,
-        `https://twitter.com/rp1603049/status/1600842399479083008`,
-        `https://twitter.com/rp1603049/status/1600826296581652481`,
-        `https://twitter.com/rp1603049/status/1600818105415962624`,
-
-
+        `https://twitter.com/Kishxxxir`,
 
     ]
 }
