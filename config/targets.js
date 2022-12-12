@@ -35,9 +35,6 @@ module.exports = {
 
         `https://twitter.com/87T19`,
 
-        `https://twitter.com/Kxxlv1xr`,
-        `https://twitter.com/Kxxlv1xr/status/1601133735487111169`,
-
         `https://twitter.com/Revok51939878`,
         `https://twitter.com/Revok51939878/status/1600704959380541446`,
         `https://twitter.com/Revok51939878/status/1600647273603600384`,
