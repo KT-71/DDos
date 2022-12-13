@@ -436,6 +436,18 @@ const initBotChrome = async (login, targets, realUsername) => {
 }
 
 const main = async () => {
+    // 檢查登入資訊
+    const loginPath = `./config/login.js`;
+    if (!fs.existsSync(loginPath)) {
+        fs.writeFileSync(loginPath, [
+            `module.exports = {`, `    logins: [`, `        {`,
+            `            email: '',         // 登入用信箱`,
+            `            password: '',      // 使用者密碼, 若要手動登入此處留空即可`,
+            `            username: ''       // 本腳本較容易被 twitter 判定為可疑登入, 故需要覆核使用者名稱`,
+            `        },`, `    ]`, `}`,].join('\r\n'));
+
+        child_process.execSync(`notepad.exe ${loginPath}`).toString();
+    }
 
     // 非正常終止程式會殘留記錄檔, 強制清除
     {
