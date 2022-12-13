@@ -42,6 +42,9 @@ module.exports = {
         `https://twitter.com/Revok51939878/status/1600507590143868932`,
 
         `https://twitter.com/Kishxxxir`,
+        
+        `https://twitter.com/hPPq1TzrUlq453H`,
+        `https://twitter.com/hPPq1TzrUlq453H/status/1602420858378924032`,
 
     ]
 }
