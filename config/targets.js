@@ -18,9 +18,6 @@ module.exports = {
 
         `https://twitter.com/Kishxxxir`,
         
-        `https://twitter.com/hPPq1TzrUlq453H`,
-        `https://twitter.com/hPPq1TzrUlq453H/status/1602420858378924032`,
-        
         `https://twitter.com/Rydirxxirr`,
         `https://twitter.com/Rydirxxirr/status/1603806481815519232`,
         `https://twitter.com/Rydirxxirr/status/1603795233686396928`,
@@ -35,7 +32,18 @@ module.exports = {
         
         `https://twitter.com/OcVqEgtgvmgbvHK`,
         `https://twitter.com/OcVqEgtgvmgbvHK/status/1602753413284040708`,
-
+        
+        `https://twitter.com/Regions26895642`,
+        `https://twitter.com/Regions26895642/status/1604808843846094849`,
+        `https://twitter.com/Regions26895642/status/1604812145618731010`,
+        
+        `https://twitter.com/EagleEy67790683`,
+        `https://twitter.com/EagleEy67790683/status/1604810841773277185`,
+        `https://twitter.com/EagleEy67790683/status/1604816783625650178`,
+        
+        `https://twitter.com/revfak`,
+        `https://twitter.com/revfak/status/1604818660937576448`,
+        
         `https://twitter.com/crdians`,
         `https://twitter.com/CsT37283310`,
         `https://twitter.com/Iliac21944663`,
