@@ -41,6 +41,10 @@ const filterElementByText = async (element, text) => {
     return null;
 }
 
+const randomPick = (items) => {
+    return items[Math.floor(Math.random() * items.length)];
+}
+
 // bot logic
 const initBotChrome = async (login, targets, realUsername) => {
     const delay = 350;
@@ -67,6 +71,8 @@ const initBotChrome = async (login, targets, realUsername) => {
     let elements = [], loginStatus = 0, refresh = 0;
     while (1) {
         let url = await driver.getCurrentUrl().catch(() => { }) || 'null';
+
+        console.log(`${doneList.length}/${targets.length}`);
 
         await (async () => {
             if (!login.email) { return; }
@@ -189,7 +195,7 @@ const initBotChrome = async (login, targets, realUsername) => {
         if (target == null && waitList.length > 0 &&
             loginStatus == 2 && url != `https://twitter.com/i/flow/login`) {
             // pop target url
-            target = waitList.shift();
+            target = waitList.shift().trim();
             if (target) { await driver.get(target); }
         }
 
@@ -310,7 +316,8 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /(其他人或特定群體)|(上的所有人)/);
+
+                elements = await findElementsByText(driver, By.css(`span`), randomPick([/其他人或特定群體/, /上的所有人/]));
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
@@ -326,7 +333,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                regex = [/^遭受垃圾訊息攻擊$/, /^他們遭人冒充或顯示假身分$/][parseInt(Math.random() * 2)]
+                regex = [/^遭受垃圾訊息攻擊$/, /^他們遭人冒充或顯示假身分$/, /令人不安的內容/][parseInt(Math.random() * 2)]
                 elements = await findElementsByText(driver, By.css(`span`), regex);
                 if (!elements[0]) { return; }
 
@@ -343,7 +350,23 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /(濫用推標)|(假裝成他們)|(令人不安的內容)/);
+                elements = await findElementsByText(driver, By.css(`span`), randomPick([/濫用推標/, /假裝成他們/, /其他項目/]));
+                if (!elements[0]) { return; }
+
+                await sleep(delay);
+                await elements[0].click().catch();
+                await sleep(delay);
+
+                elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
+                if (!elements[0]) { return; }
+
+                await sleep(delay);
+                await elements[0].click().catch();
+                await sleep(delay);
+            })();
+
+            await (async () => {
+                elements = await findElementsByText(driver, By.css(`span`), /假裝成他們/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
@@ -392,6 +415,18 @@ const initBotChrome = async (login, targets, realUsername) => {
                 // if (!elements[0]) { return; }
 
                 elements = await findElementsByText(driver, By.css(`span`), /^否$/);
+                if (!elements[0]) { return; }
+
+                await sleep(delay);
+                await elements[0].click().catch();
+                await sleep(delay);
+            })();
+
+            await (async () => {
+                // elements = await findElementsByText(driver, By.css(`span`), /內容方針/);
+                // if (!elements[0]) { return; }
+
+                elements = await findElementsByText(driver, By.css(`span`), /繼續檢舉/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
