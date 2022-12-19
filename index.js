@@ -78,7 +78,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             if (!elements[0]) { return; }
 
             await sleep(delay);
-            await elements[0].click().catch(console.log);
+            await elements[0].click().catch();
             await sleep(delay);
         })();
 
@@ -90,7 +90,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             if (!elements[0]) { return; }
 
             await sleep(delay);
-            await elements[0].click().catch(console.log);
+            await elements[0].click().catch();
             await sleep(delay);
         })();
 
@@ -114,7 +114,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
@@ -134,7 +134,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
@@ -154,7 +154,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(600);
             })();
         }
@@ -178,7 +178,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             if (!elements[0]) { return; }
 
             await sleep(delay);
-            await elements[0].click().catch(console.log);
+            await elements[0].click().catch();
             await sleep(5000);
 
             await driver.quit();
@@ -215,7 +215,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 refresh = 0;
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
@@ -247,7 +247,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 refresh = 0;
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
@@ -255,11 +255,19 @@ const initBotChrome = async (login, targets, realUsername) => {
                 elements = await findElementsByText(driver, By.css(`span`), `你已檢舉此推文`);
                 if (!elements[0]) { return; }
 
+                if (Math.random() > 0.2) {  // 80% skpi
+                    await sleep(delay);
+
+                    doneList.push(target);
+                    target = null;
+                    return;
+                }
+
                 elements = await findElementsByText(driver, By.css(`span`), `查看`);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
@@ -297,23 +305,23 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /^其他人或特定群體$/);
+                elements = await findElementsByText(driver, By.css(`span`), /(其他人或特定群體)|(上的所有人)/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
 
                 elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
@@ -323,30 +331,30 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
 
                 elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /^(濫用推標)|(假裝成他們)/);
+                elements = await findElementsByText(driver, By.css(`span`), /(濫用推標)|(假裝成他們)|(令人不安的內容)/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
 
                 elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
@@ -368,62 +376,62 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
 
                 elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), `你是否代表`);
-                if (!elements[0]) { return; }
+                // elements = await findElementsByText(driver, By.css(`span`), `你是否代表`);
+                // if (!elements[0]) { return; }
 
                 elements = await findElementsByText(driver, By.css(`span`), /^否$/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /^你似乎想要因違反/);
-                if (!elements[0]) { return; }
+                // elements = await findElementsByText(driver, By.css(`span`), /^你似乎想要因違反/);
+                // if (!elements[0]) { return; }
 
                 elements = await findElementsByText(driver, By.css(`span`), /繼續$/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /^我們來確定這項檢舉正確無誤$/);
-                if (!elements[0]) { return; }
+                // elements = await findElementsByText(driver, By.css(`span`), /^我們來確定這項檢舉正確無誤$/);
+                // if (!elements[0]) { return; }
 
                 elements = await findElementsByText(driver, By.css(`span`), /^提交$/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), `感謝你協助我們為每個人提供更好的`);
-                if (!elements[0]) { return; }
+                // elements = await findElementsByText(driver, By.css(`span`), `感謝你協助我們為每個人提供更好的`);
+                // if (!elements[0]) { return; }
 
                 elements = await findElementsByText(driver, By.css(`span`), /^完成$/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch(console.log);
+                await elements[0].click().catch();
                 await sleep(delay);
 
                 doneList.push(target);
