@@ -34,14 +34,21 @@ module.exports = {
         `https://twitter.com/OcVqEgtgvmgbvHK/status/1602753413284040708`,
         
         `https://twitter.com/Regions26895642`,
-        `https://twitter.com/Regions26895642/status/1604808843846094849`,
+        `https://twitter.com/Regions26895642/status/1604998821330661377`,
+        `https://twitter.com/Regions26895642/status/1604993349676851200`,
         `https://twitter.com/Regions26895642/status/1604812145618731010`,
+        `https://twitter.com/Regions26895642/status/1604808843846094849`,
+        `https://twitter.com/Regions26895642/status/1604607342448087040`,
         
         `https://twitter.com/EagleEy67790683`,
-        `https://twitter.com/EagleEy67790683/status/1604810841773277185`,
         `https://twitter.com/EagleEy67790683/status/1604816783625650178`,
+        `https://twitter.com/EagleEy67790683/status/1604810841773277185`,
+        `https://twitter.com/EagleEy67790683/status/1604670399702126592`,
         
         `https://twitter.com/revfak`,
+        `https://twitter.com/revfak/status/1604818660937576448`,
+        `https://twitter.com/revfak/status/1604837722891423744`,
+        `https://twitter.com/revfak/status/1604825732416507906`,
         `https://twitter.com/revfak/status/1604818660937576448`,
         
         `https://twitter.com/crdians`,
