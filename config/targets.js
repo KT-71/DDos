@@ -41,23 +41,31 @@ module.exports = {
         `https://twitter.com/Regions26895642/status/1604607342448087040`,
         
         `https://twitter.com/EagleEy67790683`,
+        `https://twitter.com/EagleEy67790683/status/1605349890804125697`,
+        `https://twitter.com/EagleEy67790683/status/1605346155369570304`,
+        `https://twitter.com/EagleEy67790683/status/1605185771165683715`,
         `https://twitter.com/EagleEy67790683/status/1604816783625650178`,
         `https://twitter.com/EagleEy67790683/status/1604810841773277185`,
-        `https://twitter.com/EagleEy67790683/status/1604670399702126592`,
         
         `https://twitter.com/revfak`,
-        `https://twitter.com/revfak/status/1604818660937576448`,
+        `https://twitter.com/revfak/status/1605305767124275200`,
         `https://twitter.com/revfak/status/1604837722891423744`,
         `https://twitter.com/revfak/status/1604825732416507906`,
         `https://twitter.com/revfak/status/1604818660937576448`,
+
+        `https://twitter.com/Reve53`,
+        `https://twitter.com/Reve53/status/1605305317025353728`,
+        `https://twitter.com/Reve53/status/1605196443706609664`,
+        
+        `https://twitter.com/Tara37Ravens`,
+        `https://twitter.com/Reve53/status/1605183589934665728`,
         
         `https://twitter.com/crdians`,
-        `https://twitter.com/CsT37283310`,
         `https://twitter.com/Iliac21944663`,
-        `https://twitter.com/DrF1k1`,
         `https://twitter.com/Alpmtmsmi3826`,
         `https://twitter.com/jit08749510`,
-        `https://twitter.com/Rj1Rgj`,
+        `https://twitter.com/CsT37283310`,
+        `https://twitter.com/DrF1k1`,
         `https://twitter.com/alterations696`,
     ]
 }
