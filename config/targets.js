@@ -32,27 +32,21 @@ module.exports = {
         `https://twitter.com/OcVqEgtgvmgbvHK`,
         `https://twitter.com/OcVqEgtgvmgbvHK/status/1602753413284040708`,
 
-        // 22/12/22
-        `https://twitter.com/Raven94336045`,
-        `https://twitter.com/Raven94336045/status/1605951135315120128`,
-        `https://twitter.com/Raven94336045/status/1605950413202563072`,
-        `https://twitter.com/Raven94336045/status/1605760463785955329`,
-        `https://twitter.com/Raven94336045/status/1605615407821225985`,
-        `https://twitter.com/Raven94336045/status/1605565883593564161`,
-        `https://twitter.com/Raven94336045/status/1605565116279242752`,
-
-        `https://twitter.com/Denen38515700`,
-        `https://twitter.com/Denen38515700/status/1606081179744083969`,
-        `https://twitter.com/Denen38515700/status/1605948467926503425`,
-        `https://twitter.com/Denen38515700/status/1605572113548554245`,
-        `https://twitter.com/Denen38515700/status/1605570175679488006`,
-
         // 22/12/23
-        `https://twitter.com/PShDvskxoAqobRl/status/1605986114719780864`,
-        `https://twitter.com/PShDvskxoAqobRl/status/1606047685840195585`,
-
         `https://twitter.com/Evbfs1`,
 
+        // 22/12/24
+        `https://twitter.com/Ravens96319683`,
+
+        `https://twitter.com/rark56_546`,
+
+        `https://twitter.com/direvn`,
+        `https://twitter.com/direvn/status/1606607555643740161`,
+
+        `https://twitter.com/Ravens83459313`,
+        `https://twitter.com/Ravens83459313/status/1606514497128222720`,
+        `https://twitter.com/Ravens83459313/status/1606466514416271360`,
+        `https://twitter.com/Ravens83459313/status/1606461639875858432`,
 
         `https://twitter.com/crdians`,
         `https://twitter.com/Alpmtmsmi3826`,
