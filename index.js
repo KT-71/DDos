@@ -333,7 +333,8 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                regex = [/^遭受垃圾訊息攻擊$/, /^他們遭人冒充或顯示假身分$/, /令人不安的內容/][parseInt(Math.random() * 2)]
+                regex = [/^遭受垃圾訊息攻擊$/, /令人不安的內容/][parseInt(Math.random() * 2)]
+                // regex = [/^遭受垃圾訊息攻擊$/, /^他們遭人冒充或顯示假身分$/, /令人不安的內容/][parseInt(Math.random() * 2)]
                 elements = await findElementsByText(driver, By.css(`span`), regex);
                 if (!elements[0]) { return; }
 
@@ -350,7 +351,8 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), randomPick([/濫用推標/, /假裝成他們/, /其他項目/]));
+                elements = await findElementsByText(driver, By.css(`span`), randomPick([/濫用推標/, /其他項目/]));
+                // elements = await findElementsByText(driver, By.css(`span`), randomPick([/濫用推標/, /假裝成他們/, /其他項目/]));
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
@@ -365,62 +367,62 @@ const initBotChrome = async (login, targets, realUsername) => {
                 await sleep(delay);
             })();
 
-            await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /假裝成他們/);
-                if (!elements[0]) { return; }
+            // await (async () => {
+            //     elements = await findElementsByText(driver, By.css(`span`), /假裝成他們/);
+            //     if (!elements[0]) { return; }
 
-                await sleep(delay);
-                await elements[0].click().catch();
-                await sleep(delay);
+            //     await sleep(delay);
+            //     await elements[0].click().catch();
+            //     await sleep(delay);
 
-                elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
-                if (!elements[0]) { return; }
+            //     elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
+            //     if (!elements[0]) { return; }
 
-                await sleep(delay);
-                await elements[0].click().catch();
-                await sleep(delay);
-            })();
+            //     await sleep(delay);
+            //     await elements[0].click().catch();
+            //     await sleep(delay);
+            // })();
 
-            await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), `告訴我們某人身分遭到冒用的相關資訊`);
-                if (!elements[0]) { return; }
+            // await (async () => {
+            //     elements = await findElementsByText(driver, By.css(`span`), `告訴我們某人身分遭到冒用的相關資訊`);
+            //     if (!elements[0]) { return; }
 
-                elements = await findElementsByText(driver, By.css(`input[data-testid='ocfTypeaheadInput']`));
-                if (!elements[0]) { return; }
+            //     elements = await findElementsByText(driver, By.css(`input[data-testid='ocfTypeaheadInput']`));
+            //     if (!elements[0]) { return; }
 
-                if (await elements[0].getAttribute('value') != realUsername) {
-                    await sleep(delay);
-                    await elements[0].clear().catch(() => { });
-                    await elements[0].sendKeys(realUsername);
-                    await sleep(600);
-                }
+            //     if (await elements[0].getAttribute('value') != realUsername) {
+            //         await sleep(delay);
+            //         await elements[0].clear().catch(() => { });
+            //         await elements[0].sendKeys(realUsername);
+            //         await sleep(600);
+            //     }
 
-                elements = await findElementsByText(driver, By.css(`span`), `@${realUsername}`);
-                if (!elements[0]) { return; }
+            //     elements = await findElementsByText(driver, By.css(`span`), `@${realUsername}`);
+            //     if (!elements[0]) { return; }
 
-                await sleep(delay);
-                await elements[0].click().catch();
-                await sleep(delay);
+            //     await sleep(delay);
+            //     await elements[0].click().catch();
+            //     await sleep(delay);
 
-                elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
-                if (!elements[0]) { return; }
+            //     elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
+            //     if (!elements[0]) { return; }
 
-                await sleep(delay);
-                await elements[0].click().catch();
-                await sleep(delay);
-            })();
+            //     await sleep(delay);
+            //     await elements[0].click().catch();
+            //     await sleep(delay);
+            // })();
 
-            await (async () => {
-                // elements = await findElementsByText(driver, By.css(`span`), `你是否代表`);
-                // if (!elements[0]) { return; }
+            // await (async () => {
+            //     // elements = await findElementsByText(driver, By.css(`span`), `你是否代表`);
+            //     // if (!elements[0]) { return; }
 
-                elements = await findElementsByText(driver, By.css(`span`), /^否$/);
-                if (!elements[0]) { return; }
+            //     elements = await findElementsByText(driver, By.css(`span`), /^否$/);
+            //     if (!elements[0]) { return; }
 
-                await sleep(delay);
-                await elements[0].click().catch();
-                await sleep(delay);
-            })();
+            //     await sleep(delay);
+            //     await elements[0].click().catch();
+            //     await sleep(delay);
+            // })();
 
             await (async () => {
                 // elements = await findElementsByText(driver, By.css(`span`), /內容方針/);
