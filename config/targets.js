@@ -32,21 +32,24 @@ module.exports = {
         `https://twitter.com/OcVqEgtgvmgbvHK`,
         `https://twitter.com/OcVqEgtgvmgbvHK/status/1602753413284040708`,
 
-        // 22/12/23
-        `https://twitter.com/Evbfs1`,
-
         // 22/12/24
         `https://twitter.com/Ravens96319683`,
+        `https://twitter.com/Ravens96319683/status/1606348757326364672`,
 
         `https://twitter.com/rark56_546`,
 
         `https://twitter.com/direvn`,
         `https://twitter.com/direvn/status/1606607555643740161`,
 
-        `https://twitter.com/Ravens83459313`,
-        `https://twitter.com/Ravens83459313/status/1606514497128222720`,
-        `https://twitter.com/Ravens83459313/status/1606466514416271360`,
-        `https://twitter.com/Ravens83459313/status/1606461639875858432`,
+        // 22/12/25
+        `https://twitter.com/R23614`,
+        `https://twitter.com/R23614/status/1606709104332144642`,
+
+        `https://twitter.com/andormetda`,
+        `https://twitter.com/andormetda/status/1606720464063467520`,
+
+        `https://twitter.com/Mpmpwp20`,
+        `https://twitter.com/Mpmpwp20/status/1606779819567775747`,
 
         `https://twitter.com/crdians`,
         `https://twitter.com/Alpmtmsmi3826`,
