@@ -49,7 +49,7 @@ module.exports = {
         `https://twitter.com/andormetda/status/1606720464063467520`,
 
         `https://twitter.com/Mpmpwp20`,
-        `https://twitter.com/Mpmpwp20/status/1606779819567775747`,
+        `https://twitter.com/Mpmpwp20/status/1607190125456551936`,
 
         `https://twitter.com/crdians`,
         `https://twitter.com/Alpmtmsmi3826`,
