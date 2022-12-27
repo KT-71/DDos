@@ -17,7 +17,9 @@ const findElementsByText = async (driver, filter, text) => {
         elements = await filterElementsByText(elements, text);
     }
 
-    console.log('findElementsByText', filter.value, `Array(${elements.length})`, text || '');
+    if (elements.length) {
+        console.log('findElementsByText', filter.value, `Array(${elements.length})`, text || '');
+    }
     return elements;
 }
 
@@ -39,6 +41,14 @@ const filterElementByText = async (element, text) => {
         if (text.constructor?.name == 'RegExp') { return text.test(rawText) ? element : null; }
     }
     return null;
+}
+
+const clickElement = async (element) => {
+    try {
+        await element.click().catch(() => { })
+    } catch (e) {
+        console.log(e.message);
+    }
 }
 
 const randomPick = (items) => {
@@ -75,8 +85,6 @@ const initBotChrome = async (login, targets, realUsername) => {
         console.log(`${doneList.length}/${targets.length}`);
 
         await (async () => {
-            if (!login.email) { return; }
-
             elements = await findElementsByText(driver, By.css(`span`), /^開啟通知$/);
             if (!elements[0]) { return; }
 
@@ -84,7 +92,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             if (!elements[0]) { return; }
 
             await sleep(delay);
-            await elements[0].click().catch();
+            await clickElement(elements[0]);
             await sleep(delay);
         })();
 
@@ -96,7 +104,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             if (!elements[0]) { return; }
 
             await sleep(delay);
-            await elements[0].click().catch();
+            await clickElement(elements[0]);
             await sleep(delay);
         })();
 
@@ -120,27 +128,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
-                await sleep(delay);
-            })();
-
-            // type in username (for twitter login check)
-            await (async () => {
-                if (!login.username) { return; }
-
-                elements = await findElementsByText(driver, By.css(`input[data-testid='ocfEnterTextTextInput']`));
-                if (!elements[0]) { return; }
-
-                await sleep(delay);
-                await elements[0].clear().catch(() => { });
-                await elements[0].sendKeys(login.username).catch(() => { });
-                await sleep(delay);
-
-                elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
-                if (!elements[0]) { return; }
-
-                await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
             })();
 
@@ -160,8 +148,28 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(600);
+            })();
+
+            // type in username (for twitter login check)
+            await (async () => {
+                if (!login.username) { return; }
+
+                elements = await findElementsByText(driver, By.css(`input[data-testid='ocfEnterTextTextInput']`));
+                if (!elements[0]) { return; }
+
+                await sleep(delay);
+                await elements[0].clear().catch(() => { });
+                await elements[0].sendKeys(login.username).catch(() => { });
+                await sleep(delay);
+
+                elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
+                if (!elements[0]) { return; }
+
+                await sleep(delay);
+                await clickElement(elements[0]);
+                await sleep(delay);
             })();
         }
 
@@ -184,7 +192,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             if (!elements[0]) { return; }
 
             await sleep(delay);
-            await elements[0].click().catch();
+            await clickElement(elements[0]);
             await sleep(5000);
 
             await driver.quit();
@@ -196,6 +204,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             loginStatus == 2 && url != `https://twitter.com/i/flow/login`) {
             // pop target url
             target = waitList.shift().trim();
+            // target = waitList.pop().trim();
             if (target) { await driver.get(target); }
         }
 
@@ -221,7 +230,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 refresh = 0;
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
             })();
 
@@ -253,7 +262,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 refresh = 0;
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
             })();
 
@@ -273,7 +282,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
             })();
 
@@ -311,7 +320,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
             })();
 
@@ -321,14 +330,14 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
 
                 elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
             })();
 
@@ -339,31 +348,30 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
 
                 elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), randomPick([/濫用推標/, /其他項目/]));
-                // elements = await findElementsByText(driver, By.css(`span`), randomPick([/濫用推標/, /假裝成他們/, /其他項目/]));
+                elements = await findElementsByText(driver, By.css(`span`), /(濫用推標)|(其他項目)/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
 
                 elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
             })();
 
@@ -372,14 +380,14 @@ const initBotChrome = async (login, targets, realUsername) => {
             //     if (!elements[0]) { return; }
 
             //     await sleep(delay);
-            //     await elements[0].click().catch();
+            //     await clickElement(elements[0]);
             //     await sleep(delay);
 
             //     elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
             //     if (!elements[0]) { return; }
 
             //     await sleep(delay);
-            //     await elements[0].click().catch();
+            //     await clickElement(elements[0]);
             //     await sleep(delay);
             // })();
 
@@ -401,14 +409,14 @@ const initBotChrome = async (login, targets, realUsername) => {
             //     if (!elements[0]) { return; }
 
             //     await sleep(delay);
-            //     await elements[0].click().catch();
+            //     await clickElement(elements[0]);
             //     await sleep(delay);
 
             //     elements = await findElementsByText(driver, By.css(`span`), /^下一步$/);
             //     if (!elements[0]) { return; }
 
             //     await sleep(delay);
-            //     await elements[0].click().catch();
+            //     await clickElement(elements[0]);
             //     await sleep(delay);
             // })();
 
@@ -420,7 +428,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             //     if (!elements[0]) { return; }
 
             //     await sleep(delay);
-            //     await elements[0].click().catch();
+            //     await clickElement(elements[0]);
             //     await sleep(delay);
             // })();
 
@@ -432,7 +440,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
             })();
 
@@ -444,7 +452,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
             })();
 
@@ -456,7 +464,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
             })();
 
@@ -468,7 +476,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
-                await elements[0].click().catch();
+                await clickElement(elements[0]);
                 await sleep(delay);
 
                 doneList.push(target);
