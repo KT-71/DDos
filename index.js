@@ -342,8 +342,9 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                regex = [/^遭受垃圾訊息攻擊$/, /令人不安的內容/][parseInt(Math.random() * 2)]
-                // regex = [/^遭受垃圾訊息攻擊$/, /^他們遭人冒充或顯示假身分$/, /令人不安的內容/][parseInt(Math.random() * 2)]
+                regex = /^遭受垃圾訊息攻擊$/;
+                // regex = [/^遭受垃圾訊息攻擊$/, /令人不安的內容/][parseInt(Math.random() * 2)];
+                // regex = [/^遭受垃圾訊息攻擊$/, /^他們遭人冒充或顯示假身分$/, /令人不安的內容/][parseInt(Math.random() * 2)];
                 elements = await findElementsByText(driver, By.css(`span`), regex);
                 if (!elements[0]) { return; }
 
@@ -360,7 +361,8 @@ const initBotChrome = async (login, targets, realUsername) => {
             })();
 
             await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /(濫用推標)|(其他項目)/);
+                elements = await findElementsByText(driver, By.css(`span`), /濫用推標/);
+                // elements = await findElementsByText(driver, By.css(`span`), /(濫用推標)|(其他項目)/);
                 if (!elements[0]) { return; }
 
                 await sleep(delay);
