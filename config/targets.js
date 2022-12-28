@@ -36,36 +36,35 @@ module.exports = {
         `https://twitter.com/Ravens96319683`,
         `https://twitter.com/Ravens96319683/status/1606348757326364672`,
 
-        `https://twitter.com/rark56_546`,
-
         `https://twitter.com/direvn`,
-        // `https://twitter.com/direvn/status/1606607555643740161`,
+        `https://twitter.com/direvn/status/1606607555643740161`,
 
         // 22/12/25
-        `https://twitter.com/R23614`,
-        // `https://twitter.com/R23614/status/1606709104332144642`,
-
         `https://twitter.com/andormetda`,
         `https://twitter.com/andormetda/status/1606720464063467520`,
 
         `https://twitter.com/Mpmpwp20`,
-        // `https://twitter.com/Mpmpwp20/status/1607190125456551936`,
-
-        `https://twitter.com/rark56_546`,
-        // `https://twitter.com/rark56_546/status/1607515104513298434`,
+        `https://twitter.com/Mpmpwp20/status/1607190125456551936`,
 
         // 22/12/27
         `https://twitter.com/Did_i_xrpxxirr`,
-        // `https://twitter.com/Did_i_xrpxxirr/status/1607514517927497729`,
+        `https://twitter.com/Did_i_xrpxxirr/status/1607514517927497729`,
 
         `https://twitter.com/Arsgald1`,
-        // `https://twitter.com/Arsgald1/status/1607581332636409856`,
-        // `https://twitter.com/Arsgald1/status/1607521214070759424`,
-        // `https://twitter.com/Arsgald1/status/1607520892795363328`,
+        `https://twitter.com/Arsgald1/status/1607890459866828800`,
+        `https://twitter.com/Arsgald1/status/1607809113202778112`,
+        `https://twitter.com/Arsgald1/status/1607710373251256329`,
+        `https://twitter.com/Arsgald1/status/1607581332636409856`,
+        `https://twitter.com/Arsgald1/status/1607521214070759424`,
+        `https://twitter.com/Arsgald1/status/1607520892795363328`,
 
         `https://twitter.com/Industr00428009`,
-        // `https://twitter.com/Industr00428009/status/1607612776637206529`,
-        // `https://twitter.com/Industr00428009/status/1607529280891658241`,
+        `https://twitter.com/Industr00428009/status/1607709212410523653`,
+        `https://twitter.com/Industr00428009/status/1607612776637206529`,
+        `https://twitter.com/Industr00428009/status/1607529280891658241`,
+
+        // 22/12/28
+        `https://twitter.com/DarjEven`,
 
         `https://twitter.com/crdians`,
         `https://twitter.com/Alpmtmsmi3826`,
@@ -74,6 +73,9 @@ module.exports = {
 
     ]
 }
+
+
+
 
 
 
