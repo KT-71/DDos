@@ -66,6 +66,15 @@ module.exports = {
         // 22/12/28
         `https://twitter.com/DarjEven`,
 
+        // 22/12/29
+        `https://twitter.com/Andrlei2`,
+        `https://twitter.com/Andrlei2/status/1608377375410237441`,
+        `https://twitter.com/Andrlei2/status/1608376764061081601`,
+        `https://twitter.com/Andrlei2/status/1608206154793885699`,
+        `https://twitter.com/Andrlei2/status/1608204873778221056`,
+        `https://twitter.com/Andrlei2/status/1608162008536432643`,
+        `https://twitter.com/Andrlei2/status/1608161637164261382`,
+
         `https://twitter.com/crdians`,
         `https://twitter.com/Alpmtmsmi3826`,
         `https://twitter.com/jit08749510`,
