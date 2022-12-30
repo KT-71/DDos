@@ -68,12 +68,21 @@ module.exports = {
 
         // 22/12/29
         `https://twitter.com/Andrlei2`,
+        `https://twitter.com/Andrlei2/status/1608541766596300800`,
         `https://twitter.com/Andrlei2/status/1608377375410237441`,
         `https://twitter.com/Andrlei2/status/1608376764061081601`,
         `https://twitter.com/Andrlei2/status/1608206154793885699`,
         `https://twitter.com/Andrlei2/status/1608204873778221056`,
         `https://twitter.com/Andrlei2/status/1608162008536432643`,
         `https://twitter.com/Andrlei2/status/1608161637164261382`,
+
+        // 22/12/30
+        `https://twitter.com/diesard`,
+        
+        `https://twitter.com/Right60140547`,
+        
+        `https://twitter.com/AjendaDenen`,
+        
 
         `https://twitter.com/crdians`,
         `https://twitter.com/Alpmtmsmi3826`,
