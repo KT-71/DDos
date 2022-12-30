@@ -76,7 +76,7 @@ const initBotChrome = async (login, targets, realUsername) => {
 
     // set target list
     let waitList = targets.filter(() => true);
-    let target = null, doneList = [];
+    let target = null, doneList = [], dieList = [];
 
     let elements = [], loginStatus = 0, refresh = 0;
     while (1) {
@@ -196,15 +196,15 @@ const initBotChrome = async (login, targets, realUsername) => {
             await sleep(5000);
 
             await driver.quit();
-            return doneList;
+            return { doneList, dieList };
         }
 
         // idle...
         if (target == null && waitList.length > 0 &&
             loginStatus == 2 && url != `https://twitter.com/i/flow/login`) {
             // pop target url
-            target = waitList.shift().trim();
-            // target = waitList.pop().trim();
+            // target = waitList.shift().trim();
+            target = waitList.pop().trim();
             if (target) { await driver.get(target); }
         }
 
@@ -240,6 +240,7 @@ const initBotChrome = async (login, targets, realUsername) => {
 
                 await sleep(delay);
 
+                dieList.push(target);
                 doneList.push(target);
                 target = null;
             })();
@@ -584,14 +585,20 @@ const main = async () => {
     // main var
     const { logins } = require(`./config/login.js`);
     const { targets, realUsername } = require(`./config/targets.js`);
-    let doneList = [];
+    let doneList = [], dieList = [];
     for (let login of logins) {
-        doneList = doneList.concat(await initBotChrome(login, targets, realUsername));
+        let lists = await initBotChrome(login, targets, realUsername);
+        doneList = doneList.concat(lists.doneList);
+        dieList = dieList.concat(lists.dieList);
     }
 
     console.clear();
     console.log(`批次檢舉已完成, 本次檢舉內容: `)
     for (let done of doneList) {
+        console.log(done);
+    }
+    console.log(`已被停用的帳戶: `)
+    for (let done of dieList) {
         console.log(done);
     }
     console.log(`請按 ENTER 鍵結束 . . .`);
