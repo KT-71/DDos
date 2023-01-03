@@ -19,11 +19,6 @@ module.exports = {
         `https://twitter.com/OcVqEgtgvmgbvHK`,
         `https://twitter.com/OcVqEgtgvmgbvHK/status/1602753413284040708`,
 
-        // 22/12/23
-
-        `https://twitter.com/lDJRFRuj62oFusH`,
-        `https://twitter.com/lDJRFRuj62oFusH/status/1606119260689797120`,
-
 
         // 22/12/24
         `https://twitter.com/Ravens96319683`,
@@ -102,6 +97,9 @@ module.exports = {
         // 23/01/01
         `https://twitter.com/Revich7`,
 
+        // 23/01/03
+        `https://twitter.com/MrogmMrogm3`,
+        `https://twitter.com/MrogmMrogm3/status/1609983469714837505`,
 
         `https://twitter.com/crdians`,
         `https://twitter.com/Alpmtmsmi3826`,
