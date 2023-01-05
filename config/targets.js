@@ -43,28 +43,6 @@ module.exports = {
         `https://twitter.com/Industr00428009/status/1607612776637206529`,
         `https://twitter.com/Industr00428009/status/1607529280891658241`,
 
-        // 22/12/29
-        `https://twitter.com/Andrlei2`,
-        `https://twitter.com/Andrlei2/status/1609509952699113473`,
-        `https://twitter.com/Andrlei2/status/1609132934514233352`,
-        `https://twitter.com/Andrlei2/status/1609132424109215745`,
-        `https://twitter.com/Andrlei2/status/1609112814643466240`,
-        `https://twitter.com/Andrlei2/status/1609112571151261698`,
-        `https://twitter.com/Andrlei2/status/1609090163468115968`,
-        `https://twitter.com/Andrlei2/status/1609090163468115968`,
-        `https://twitter.com/Andrlei2/status/1608760000473882624`,
-        `https://twitter.com/Andrlei2/status/1608758875892895744`,
-        `https://twitter.com/Andrlei2/status/1608758660431499264`,
-        `https://twitter.com/Andrlei2/status/1608716207448023042`,
-        `https://twitter.com/Andrlei2/status/1608715569603448833`,
-        `https://twitter.com/Andrlei2/status/1608541766596300800`,
-        `https://twitter.com/Andrlei2/status/1608377375410237441`,
-        `https://twitter.com/Andrlei2/status/1608376764061081601`,
-        `https://twitter.com/Andrlei2/status/1608206154793885699`,
-        `https://twitter.com/Andrlei2/status/1608204873778221056`,
-        `https://twitter.com/Andrlei2/status/1608162008536432643`,
-        `https://twitter.com/Andrlei2/status/1608161637164261382`,
-
         // 22/12/30
         `https://twitter.com/diesard`,
 
@@ -105,6 +83,21 @@ module.exports = {
 
         `https://twitter.com/Vpn555661`,
         `https://twitter.com/Vpn555661/status/1610556862067314688`,
+
+        // 23/01/05
+        `https://twitter.com/52am9`,
+        
+        `https://twitter.com/75joafowj`,
+        `https://twitter.com/75joafowj/status/1610890365317292033`,
+        `https://twitter.com/75joafowj/status/1610872386840104966`,
+        `https://twitter.com/75joafowj/status/1610871894823116800`,
+        `https://twitter.com/75joafowj/status/1610859648017469440`,
+        
+        `https://twitter.com/3t4rUV9FZzIJXDa`,
+        
+        `https://twitter.com/rejymud`,
+        `https://twitter.com/rejymud/status/1610920964350427139`,
+
 
         `https://twitter.com/Alpmtmsmi3826`,
         `https://twitter.com/jit08749510`,
