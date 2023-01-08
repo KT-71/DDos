@@ -19,13 +19,9 @@ module.exports = {
         `https://twitter.com/OcVqEgtgvmgbvHK`,
         `https://twitter.com/OcVqEgtgvmgbvHK/status/1602753413284040708`,
 
-
         // 22/12/24
         `https://twitter.com/Ravens96319683`,
         `https://twitter.com/Ravens96319683/status/1606348757326364672`,
-
-        `https://twitter.com/direvn`,
-        `https://twitter.com/direvn/status/1606607555643740161`,
 
         // 22/12/25
         `https://twitter.com/andormetda`,
@@ -46,9 +42,6 @@ module.exports = {
         // 22/12/30
         `https://twitter.com/diesard`,
 
-        `https://twitter.com/Little74415008`,
-        `https://twitter.com/Little74415008/status/1610548795343011845`,
-
         // 22/12/31
         `https://twitter.com/Ravens96319683`,
 
@@ -59,44 +52,27 @@ module.exports = {
         // 23/01/01
         `https://twitter.com/Revich7`,
 
-        // 23/01/04
-        `https://twitter.com/Cark90213673`,
-        `https://twitter.com/Cark90213673/status/1604135589137334275`,
-        `https://twitter.com/Cark90213673/status/1603807704790843401`,
-        `https://twitter.com/Cark90213673/status/1603733165000241152`,
-        `https://twitter.com/Cark90213673/status/1603217342435012609`,
-        `https://twitter.com/Cark90213673/status/1603059583639248897`,
-        `https://twitter.com/Cark90213673/status/1602993742092402690`,
-        `https://twitter.com/Cark90213673/status/1602993280031264769`,
-        `https://twitter.com/Cark90213673/status/1602698462235185153`,
-        `https://twitter.com/Cark90213673/status/1602630222284673024`,
-        `https://twitter.com/Cark90213673/status/1602623745285410816`,
-        `https://twitter.com/Cark90213673/status/1602515870311251970`,
-        `https://twitter.com/Cark90213673/status/1602427065483104258`,
-        `https://twitter.com/Cark90213673/status/1602426179369197571`,
-        `https://twitter.com/Cark90213673/status/1602266472423645184`,
-        `https://twitter.com/Cark90213673/status/1602265930351882240`,
-        `https://twitter.com/Cark90213673/status/1601922583640915968`,
-        `https://twitter.com/Cark90213673/status/1601922201762304001`,
-        `https://twitter.com/Cark90213673/status/1601699566285643779`,
-        `https://twitter.com/Cark90213673/status/1601688036156526594`,
-
-        `https://twitter.com/Vpn555661`,
-        `https://twitter.com/Vpn555661/status/1610556862067314688`,
-
         // 23/01/05
         `https://twitter.com/52am9`,
-        
+
         `https://twitter.com/75joafowj`,
         `https://twitter.com/75joafowj/status/1610890365317292033`,
         `https://twitter.com/75joafowj/status/1610872386840104966`,
         `https://twitter.com/75joafowj/status/1610871894823116800`,
         `https://twitter.com/75joafowj/status/1610859648017469440`,
-        
+
         `https://twitter.com/3t4rUV9FZzIJXDa`,
-        
-        `https://twitter.com/rejymud`,
-        `https://twitter.com/rejymud/status/1610920964350427139`,
+
+        // 23/01/08
+        `https://twitter.com/T6j52`,
+
+        `https://twitter.com/Demetro81757016`,
+
+        `https://twitter.com/Regions49719032`,
+
+        `https://twitter.com/Re45m7774267`,
+
+        `https://twitter.com/expressairk`,
 
 
         `https://twitter.com/Alpmtmsmi3826`,
