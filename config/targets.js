@@ -74,6 +74,13 @@ module.exports = {
 
         `https://twitter.com/expressairk`,
 
+        // 23/01/08
+        `https://twitter.com/Rightart3`,
+
+        `https://twitter.com/5Pnq09G9eOfbZRf`,
+
+        `https://twitter.com/WcJOus1K3QYkDbR`,
+
 
         `https://twitter.com/Alpmtmsmi3826`,
         `https://twitter.com/jit08749510`,
