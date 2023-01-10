@@ -36,7 +36,6 @@ module.exports = {
 
         `https://twitter.com/Industr00428009`,
         `https://twitter.com/Industr00428009/status/1607709212410523653`,
-        `https://twitter.com/Industr00428009/status/1607612776637206529`,
         `https://twitter.com/Industr00428009/status/1607529280891658241`,
 
         // 22/12/30
@@ -61,16 +60,7 @@ module.exports = {
         `https://twitter.com/75joafowj/status/1610871894823116800`,
         `https://twitter.com/75joafowj/status/1610859648017469440`,
 
-        `https://twitter.com/3t4rUV9FZzIJXDa`,
-
         // 23/01/08
-        `https://twitter.com/T6j52`,
-
-        `https://twitter.com/Demetro81757016`,
-
-        `https://twitter.com/Regions49719032`,
-
-        `https://twitter.com/Re45m7774267`,
 
         `https://twitter.com/expressairk`,
 
@@ -78,8 +68,26 @@ module.exports = {
         `https://twitter.com/Rightart3`,
 
         `https://twitter.com/5Pnq09G9eOfbZRf`,
+        `https://twitter.com/5Pnq09G9eOfbZRf/status/1612588708183834624`,
 
         `https://twitter.com/WcJOus1K3QYkDbR`,
+
+        // 23/01/10
+        `https://twitter.com/Nayuta10108`,
+        `https://twitter.com/Nayuta10108/status/1612591866901594113`,
+        `https://twitter.com/Nayuta10108/status/1612590980167000064`,
+        `https://twitter.com/Nayuta10108/status/1604131709301276675`,
+        `https://twitter.com/Nayuta10108/status/1604129416187084802`,
+        `https://twitter.com/Nayuta10108/status/1603808091543420931`,
+        `https://twitter.com/Nayuta10108/status/1603230223276789760`,
+        `https://twitter.com/Nayuta10108/status/1603016244554215424`,
+        `https://twitter.com/Nayuta10108/status/1602992852455329792`,
+        `https://twitter.com/Nayuta10108/status/1602992613706981378`,
+        `https://twitter.com/Nayuta10108/status/1602699872989315076`,
+        
+        `https://twitter.com/Deejay64626526`,
+
+        `https://twitter.com/Laur31068381`,
 
 
         `https://twitter.com/Alpmtmsmi3826`,
