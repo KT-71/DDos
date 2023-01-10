@@ -294,6 +294,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 await sleep(delay);
 
                 // doneList.push(target);
+                dieList.push(target);
                 target = null;
             })();
         }
@@ -590,6 +591,8 @@ const main = async () => {
         let lists = await initBotChrome(login, targets, realUsername);
         doneList = doneList.concat(lists.doneList);
         dieList = dieList.concat(lists.dieList);
+        doneList = doneList.filter((ele, i) => (doneList.indexOf(ele) === i));
+        dieList = dieList.filter((ele, i) => (dieList.indexOf(ele) === i));
     }
 
     console.clear();
