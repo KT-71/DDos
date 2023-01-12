@@ -37,8 +37,6 @@ module.exports = {
         `https://twitter.com/diesard`,
 
         // 22/12/31
-        `https://twitter.com/Ravens96319683`,
-
         `https://twitter.com/Wa46n1_35`,
 
         `https://twitter.com/Reveale00978717`,
@@ -59,21 +57,53 @@ module.exports = {
         `https://twitter.com/expressairk`,
 
         // 23/01/08
-        `https://twitter.com/5Pnq09G9eOfbZRf`,
-        `https://twitter.com/5Pnq09G9eOfbZRf/status/1612588708183834624`,
-
         `https://twitter.com/WcJOus1K3QYkDbR`,
 
-        // 23/01/10
-        `https://twitter.com/Laur31068381`,
+        // 23/01/12
+        `https://twitter.com/Reira29276780`,
+        `https://twitter.com/Reira29276780/status/1613396402247286784`,
+        `https://twitter.com/Reira29276780/status/1613291948206612481`,
+        `https://twitter.com/Reira29276780/status/1613282387516956673`,
+
+        `https://twitter.com/Rideon65210045`,
+        `https://twitter.com/Rideon65210045/status/1613287672121892864`,
+
+        `https://twitter.com/pyW0Vsf22KbPyc3`,
+        `https://twitter.com/pyW0Vsf22KbPyc3/status/1613310121672867840`,
+        `https://twitter.com/pyW0Vsf22KbPyc3/status/1613301606493167617`,
+        `https://twitter.com/pyW0Vsf22KbPyc3/status/1613301309326647297`,
+
+        `https://twitter.com/HnbSkx`,
+        `https://twitter.com/HnbSkx/status/1613440063354048513`,
+        `https://twitter.com/HnbSkx/status/1613439733606256641`,
+
+        `https://twitter.com/DiameterDrill`,
+        `https://twitter.com/DiameterDrill/status/1613500036423495680`,
+        `https://twitter.com/DiameterDrill/status/1613492149588312064`,
+        `https://twitter.com/DiameterDrill/status/1613465926992596992`,
+
+        `https://twitter.com/JRN64`,
+        `https://twitter.com/JRN64/status/1613462447821578250`,
+
+        `https://twitter.com/75joafowj`,
+        `https://twitter.com/75joafowj/status/1613452636451385345`,
+        `https://twitter.com/75joafowj/status/1613452048850386944`,
+        `https://twitter.com/75joafowj/status/1610890365317292033`,
+        `https://twitter.com/75joafowj/status/1610887112471052288`,
+        `https://twitter.com/75joafowj/status/1610872386840104966`,
+        `https://twitter.com/75joafowj/status/1610871894823116800`,
+        `https://twitter.com/75joafowj/status/1610859648017469440`,
+
+        `https://twitter.com/IpsBu`,
+        `https://twitter.com/IpsBu/status/1613497379352870912`,
 
 
         `https://twitter.com/Alpmtmsmi3826`,
-        `https://twitter.com/jit08749510`,
         `https://twitter.com/alterations696`,
 
     ]
 }
+
 
 
 
