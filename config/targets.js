@@ -65,27 +65,13 @@ module.exports = {
         `https://twitter.com/Reira29276780/status/1613291948206612481`,
         `https://twitter.com/Reira29276780/status/1613282387516956673`,
 
-        `https://twitter.com/Rideon65210045`,
-        `https://twitter.com/Rideon65210045/status/1613287672121892864`,
-
-        `https://twitter.com/pyW0Vsf22KbPyc3`,
-        `https://twitter.com/pyW0Vsf22KbPyc3/status/1613310121672867840`,
-        `https://twitter.com/pyW0Vsf22KbPyc3/status/1613301606493167617`,
-        `https://twitter.com/pyW0Vsf22KbPyc3/status/1613301309326647297`,
-
-        `https://twitter.com/HnbSkx`,
-        `https://twitter.com/HnbSkx/status/1613440063354048513`,
-        `https://twitter.com/HnbSkx/status/1613439733606256641`,
-
-        `https://twitter.com/DiameterDrill`,
-        `https://twitter.com/DiameterDrill/status/1613500036423495680`,
-        `https://twitter.com/DiameterDrill/status/1613492149588312064`,
-        `https://twitter.com/DiameterDrill/status/1613465926992596992`,
-
         `https://twitter.com/JRN64`,
         `https://twitter.com/JRN64/status/1613462447821578250`,
 
         `https://twitter.com/75joafowj`,
+        `https://twitter.com/75joafowj/status/1613812857426280450`,
+        `https://twitter.com/75joafowj/status/1613748171754115074`,
+        `https://twitter.com/75joafowj/status/1613747482277842944`,
         `https://twitter.com/75joafowj/status/1613452636451385345`,
         `https://twitter.com/75joafowj/status/1613452048850386944`,
         `https://twitter.com/75joafowj/status/1610890365317292033`,
@@ -95,7 +81,16 @@ module.exports = {
         `https://twitter.com/75joafowj/status/1610859648017469440`,
 
         `https://twitter.com/IpsBu`,
+        `https://twitter.com/IpsBu/status/1613714507414777856`,
         `https://twitter.com/IpsBu/status/1613497379352870912`,
+
+        `https://twitter.com/AjtJ_65`,
+        `https://twitter.com/AjtJ_65/status/1613802409364688896`,
+
+        `https://twitter.com/ivpfzpbv0yEsduP`,
+
+        `https://twitter.com/epicliahj3tj`,
+        `https://twitter.com/epicliahj3tj/status/1613813496801812485`,
 
 
         `https://twitter.com/Alpmtmsmi3826`,
