@@ -69,6 +69,9 @@ module.exports = {
         `https://twitter.com/JRN64/status/1613462447821578250`,
 
         `https://twitter.com/75joafowj`,
+        `https://twitter.com/75joafowj/status/1614178705462501377`,
+        `https://twitter.com/75joafowj/status/1614064732557946880`,
+        `https://twitter.com/75joafowj/status/1614063935702933507`,
         `https://twitter.com/75joafowj/status/1613812857426280450`,
         `https://twitter.com/75joafowj/status/1613748171754115074`,
         `https://twitter.com/75joafowj/status/1613747482277842944`,
@@ -81,6 +84,8 @@ module.exports = {
         `https://twitter.com/75joafowj/status/1610859648017469440`,
 
         `https://twitter.com/IpsBu`,
+        `https://twitter.com/IpsBu/status/1614039888113827841`,
+        `https://twitter.com/IpsBu/status/1614038174795272193`,
         `https://twitter.com/IpsBu/status/1613714507414777856`,
         `https://twitter.com/IpsBu/status/1613497379352870912`,
 
