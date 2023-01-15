@@ -58,6 +58,7 @@ const randomPick = (items) => {
 // bot logic
 const initBotChrome = async (login, targets, realUsername) => {
     const delay = 350;
+    const userNum = require(`./config/login.js`).logins.indexOf(login);
 
     // chrome
     let chromeOptions = new chrome.Options();
@@ -82,7 +83,7 @@ const initBotChrome = async (login, targets, realUsername) => {
     while (1) {
         let url = await driver.getCurrentUrl().catch(() => { }) || 'null';
 
-        console.log(`${doneList.length}/${targets.length}`);
+        console.log(`[${userNum}] ${doneList.length}/${targets.length}`);
 
         await (async () => {
             elements = await findElementsByText(driver, By.css(`span`), /^開啟通知$/);
@@ -216,6 +217,17 @@ const initBotChrome = async (login, targets, realUsername) => {
         // fake user
         if (loginStatus == 2 && url == target && /https:\/\/twitter\.com\/\S+$/.test(url)) {
             await (async () => {
+                elements = await findElementsByText(driver, By.css(`span`), /(帳戶已停用)|(此帳戶不存在)/);
+                if (!elements[0]) { return; }
+
+                await sleep(delay);
+
+                dieList.push(target);
+                doneList.push(target);
+                target = null;
+            })();
+
+            await (async () => {
                 elements = await findElementsByText(driver, By.css(`div[data-testid='userActions']`));
                 if (!elements[0]) { return; }
 
@@ -233,21 +245,21 @@ const initBotChrome = async (login, targets, realUsername) => {
                 await clickElement(elements[0]);
                 await sleep(delay);
             })();
-
-            await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /(帳戶已停用)|(此帳戶不存在)/);
-                if (!elements[0]) { return; }
-
-                await sleep(delay);
-
-                dieList.push(target);
-                doneList.push(target);
-                target = null;
-            })();
         }
 
         // annoying tweet
         if (loginStatus == 2 && url == target && /https:\/\/twitter\.com\/\S+\/status\/\d+/.test(url)) {
+            await (async () => {
+                elements = await findElementsByText(driver, By.css(`span`), /(此頁面不存在)|(此推文來自遭到停用的帳戶)/);
+                if (!elements[0]) { return; }
+
+                await sleep(delay);
+
+                // doneList.push(target);
+                dieList.push(target);
+                target = null;
+            })();
+
             await (async () => {
                 elements = await findElementsByText(driver, By.css(`div[data-testid='caret']`));
                 if (!elements[0]) { return; }
@@ -285,17 +297,6 @@ const initBotChrome = async (login, targets, realUsername) => {
                 await sleep(delay);
                 await clickElement(elements[0]);
                 await sleep(delay);
-            })();
-
-            await (async () => {
-                elements = await findElementsByText(driver, By.css(`span`), /(此頁面不存在)|(此推文來自遭到停用的帳戶)/);
-                if (!elements[0]) { return; }
-
-                await sleep(delay);
-
-                // doneList.push(target);
-                dieList.push(target);
-                target = null;
             })();
         }
 
