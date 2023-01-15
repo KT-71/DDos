@@ -33,9 +33,6 @@ module.exports = {
         `https://twitter.com/Did_i_xrpxxirr`,
         `https://twitter.com/Did_i_xrpxxirr/status/1607514517927497729`,
 
-        // 22/12/30
-        `https://twitter.com/diesard`,
-
         // 22/12/31
         `https://twitter.com/Wa46n1_35`,
 
@@ -69,6 +66,7 @@ module.exports = {
         `https://twitter.com/JRN64/status/1613462447821578250`,
 
         `https://twitter.com/75joafowj`,
+        `https://twitter.com/75joafowj/status/1614405262349336576`,
         `https://twitter.com/75joafowj/status/1614178705462501377`,
         `https://twitter.com/75joafowj/status/1614064732557946880`,
         `https://twitter.com/75joafowj/status/1614063935702933507`,
@@ -84,22 +82,51 @@ module.exports = {
         `https://twitter.com/75joafowj/status/1610859648017469440`,
 
         `https://twitter.com/IpsBu`,
+        `https://twitter.com/IpsBu/status/1614533531623129088`,
+        `https://twitter.com/IpsBu/status/1614403694480744449`,
+        `https://twitter.com/IpsBu/status/1614403250060513282`,
         `https://twitter.com/IpsBu/status/1614039888113827841`,
         `https://twitter.com/IpsBu/status/1614038174795272193`,
         `https://twitter.com/IpsBu/status/1613714507414777856`,
         `https://twitter.com/IpsBu/status/1613497379352870912`,
 
-        `https://twitter.com/AjtJ_65`,
-        `https://twitter.com/AjtJ_65/status/1613802409364688896`,
-
         `https://twitter.com/ivpfzpbv0yEsduP`,
 
         `https://twitter.com/epicliahj3tj`,
+        `https://twitter.com/epicliahj3tj/status/1614534193668661250`,
         `https://twitter.com/epicliahj3tj/status/1613813496801812485`,
+
+        // 23/01/15
+        `https://twitter.com/vkXTNxl0TZHX6Zh`,
+        `https://twitter.com/vkXTNxl0TZHX6Zh/status/1614536519254941697`,
+
+        `https://twitter.com/nl38v`,
+        `https://twitter.com/nl38v/status/1614540421929275392`,
+        `https://twitter.com/nl38v/status/1614539816800235521`,
+
+        `https://twitter.com/Banme75273119`,
 
 
         `https://twitter.com/Alpmtmsmi3826`,
         `https://twitter.com/alterations696`,
+
+        // other
+        `https://twitter.com/PXxGOU2g3zMh5CJ`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614511667832066050`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614509131226021888`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614507901359624192`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614507559536447490`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614507130828259330`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614506875256737793`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614506072664080385`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614500945278435330`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614500121903005696`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614499711645528065`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614499213689380865`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614498440750436354`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614498110927167499`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614497760425934848`,
+        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614497430975959040`,
 
     ]
 }
