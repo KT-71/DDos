@@ -23,9 +23,6 @@ module.exports = {
         `https://twitter.com/Ravens96319683/status/1606348757326364672`,
 
         // 22/12/25
-        `https://twitter.com/andormetda`,
-        `https://twitter.com/andormetda/status/1606720464063467520`,
-
         `https://twitter.com/Mpmpwp20`,
         `https://twitter.com/Mpmpwp20/status/1607190125456551936`,
 
@@ -94,12 +91,11 @@ module.exports = {
         `https://twitter.com/epicliahj3tj/status/1613813496801812485`,
 
         // 23/01/15
-        `https://twitter.com/vkXTNxl0TZHX6Zh`,
-        `https://twitter.com/vkXTNxl0TZHX6Zh/status/1614536519254941697`,
-
         `https://twitter.com/nl38v`,
+        `https://twitter.com/nl38v/status/1615309920227962880`,
+        `https://twitter.com/nl38v/status/1615309745874927616`,
+        `https://twitter.com/nl38v/status/1615217623406637060`,
         `https://twitter.com/nl38v/status/1614963204953903107`,
-        `https://twitter.com/nl38v/status/1614802969957994496`,
         `https://twitter.com/nl38v/status/1614785043490111488`,
         `https://twitter.com/nl38v/status/1614540421929275392`,
         `https://twitter.com/nl38v/status/1614539816800235521`,
@@ -108,21 +104,21 @@ module.exports = {
 
         // 23/01/16
         `https://twitter.com/Cb0Gq`,
+        `https://twitter.com/Cb0Gq/status/1615205815706701825`,
+        `https://twitter.com/Cb0Gq/status/1615200907662180353`,
+        `https://twitter.com/Cb0Gq/status/1615200116289175554`,
         `https://twitter.com/Cb0Gq/status/1614961504142659586`,
         `https://twitter.com/Cb0Gq/status/1614947380918370307`,
 
-        `https://twitter.com/9iWBjD1SsRTC41f`,
-        `https://twitter.com/9iWBjD1SsRTC41f/status/1610872386840104966`,
+        //23/01/18        
+        `https://twitter.com/8IGGwnsKsg0skkj`,
+        `https://twitter.com/8IGGwnsKsg0skkj/status/1615544807438553088`,
 
 
         `https://twitter.com/Alpmtmsmi3826`,
         `https://twitter.com/alterations696`,
 
         // other
-        `https://twitter.com/PXxGOU2g3zMh5CJ`,
-        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614443660304842752`,
-        `https://twitter.com/PXxGOU2g3zMh5CJ/status/1614437495365828615`,
-
         `https://twitter.com/yukkuri_tnp`,
     ]
 }
