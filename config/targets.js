@@ -41,25 +41,6 @@ module.exports = {
         // 23/01/05
         `https://twitter.com/52am9`,
 
-        `https://twitter.com/75joafowj`,
-        `https://twitter.com/75joafowj/status/1614924318835904513`,
-        `https://twitter.com/75joafowj/status/1614909388556304384`,
-        `https://twitter.com/75joafowj/status/1614792244568915969`,
-        `https://twitter.com/75joafowj/status/1614405262349336576`,
-        `https://twitter.com/75joafowj/status/1614178705462501377`,
-        `https://twitter.com/75joafowj/status/1614064732557946880`,
-        `https://twitter.com/75joafowj/status/1614063935702933507`,
-        `https://twitter.com/75joafowj/status/1613812857426280450`,
-        `https://twitter.com/75joafowj/status/1613748171754115074`,
-        `https://twitter.com/75joafowj/status/1613747482277842944`,
-        `https://twitter.com/75joafowj/status/1613452636451385345`,
-        `https://twitter.com/75joafowj/status/1613452048850386944`,
-        `https://twitter.com/75joafowj/status/1610890365317292033`,
-        `https://twitter.com/75joafowj/status/1610887112471052288`,
-        `https://twitter.com/75joafowj/status/1610872386840104966`,
-        `https://twitter.com/75joafowj/status/1610871894823116800`,
-        `https://twitter.com/75joafowj/status/1610859648017469440`,
-
         // 23/01/08
         `https://twitter.com/expressairk`,
 
@@ -76,6 +57,11 @@ module.exports = {
         `https://twitter.com/JRN64/status/1613462447821578250`,
 
         `https://twitter.com/IpsBu`,
+        `https://twitter.com/IpsBu/status/1615945119865397250`,
+        `https://twitter.com/IpsBu/status/1615903671480352768`,
+        `https://twitter.com/IpsBu/status/1615903374552989701`,
+        `https://twitter.com/IpsBu/status/1615586696724193281`,
+        `https://twitter.com/IpsBu/status/1615583558118031361`,
         `https://twitter.com/IpsBu/status/1614533531623129088`,
         `https://twitter.com/IpsBu/status/1614403694480744449`,
         `https://twitter.com/IpsBu/status/1614403250060513282`,
@@ -91,28 +77,13 @@ module.exports = {
         `https://twitter.com/epicliahj3tj/status/1613813496801812485`,
 
         // 23/01/15
-        `https://twitter.com/nl38v`,
-        `https://twitter.com/nl38v/status/1615309920227962880`,
-        `https://twitter.com/nl38v/status/1615309745874927616`,
-        `https://twitter.com/nl38v/status/1615217623406637060`,
-        `https://twitter.com/nl38v/status/1614963204953903107`,
-        `https://twitter.com/nl38v/status/1614785043490111488`,
-        `https://twitter.com/nl38v/status/1614540421929275392`,
-        `https://twitter.com/nl38v/status/1614539816800235521`,
-
         `https://twitter.com/Banme75273119`,
 
-        // 23/01/16
-        `https://twitter.com/Cb0Gq`,
-        `https://twitter.com/Cb0Gq/status/1615205815706701825`,
-        `https://twitter.com/Cb0Gq/status/1615200907662180353`,
-        `https://twitter.com/Cb0Gq/status/1615200116289175554`,
-        `https://twitter.com/Cb0Gq/status/1614961504142659586`,
-        `https://twitter.com/Cb0Gq/status/1614947380918370307`,
-
-        //23/01/18        
-        `https://twitter.com/8IGGwnsKsg0skkj`,
-        `https://twitter.com/8IGGwnsKsg0skkj/status/1615544807438553088`,
+        // 23/01/19
+        `https://twitter.com/Kis_nxsjn`,
+        `https://twitter.com/Kis_nxsjn/status/1615988058347675651`,
+        `https://twitter.com/Kis_nxsjn/status/1615979967178833920`,
+        `https://twitter.com/Kis_nxsjn/status/1615977050250035201`,
 
 
         `https://twitter.com/Alpmtmsmi3826`,
@@ -120,11 +91,16 @@ module.exports = {
 
         // other
         `https://twitter.com/yukkuri_tnp`,
+
+        `https://twitter.com/GrastonBerry`,
+        `https://twitter.com/GrastonBerry/status/1615863960074612738`,
+        `https://twitter.com/GrastonBerry/status/1615808729152380928`,
+        `https://twitter.com/GrastonBerry/status/1615777550642610182`,
+        `https://twitter.com/GrastonBerry/status/1615750455577149440`,
+        `https://twitter.com/GrastonBerry/status/1615750205546336256`,
+        `https://twitter.com/GrastonBerry/status/1615750033227517952`,
     ]
 }
-
-
-
 
 
 
