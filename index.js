@@ -283,7 +283,7 @@ const initBotChrome = async (login, targets, realUsername) => {
                 elements = await findElementsByText(driver, By.css(`span`), `你已檢舉此推文`);
                 if (!elements[0]) { return; }
 
-                if (Math.random() > 0.2) {  // 80% skpi
+                if (Math.random() > 0.05) {  // 95% skip
                     await sleep(delay);
 
                     doneList.push(target);
