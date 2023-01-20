@@ -33,8 +33,6 @@ module.exports = {
         // 22/12/31
         `https://twitter.com/Wa46n1_35`,
 
-        `https://twitter.com/Reveale00978717`,
-
         // 23/01/01
         `https://twitter.com/Revich7`,
 
@@ -57,6 +55,8 @@ module.exports = {
         `https://twitter.com/JRN64/status/1613462447821578250`,
 
         `https://twitter.com/IpsBu`,
+        `https://twitter.com/IpsBu/status/1616372721193226243`,
+        `https://twitter.com/IpsBu/status/1615985833483374592`,
         `https://twitter.com/IpsBu/status/1615945119865397250`,
         `https://twitter.com/IpsBu/status/1615903671480352768`,
         `https://twitter.com/IpsBu/status/1615903374552989701`,
@@ -79,20 +79,22 @@ module.exports = {
         // 23/01/15
         `https://twitter.com/Banme75273119`,
 
-        // 23/01/19
-        `https://twitter.com/Kis_nxsjn`,
-        `https://twitter.com/Kis_nxsjn/status/1615988058347675651`,
-        `https://twitter.com/Kis_nxsjn/status/1615979967178833920`,
-        `https://twitter.com/Kis_nxsjn/status/1615977050250035201`,
+        // 23/01/20
+        `https://twitter.com/AntoDorge`,
+
+        `https://twitter.com/F7lhIph3GEOmykD`,
+        `https://twitter.com/F7lhIph3GEOmykD/status/1616384854161240064`,
+        `https://twitter.com/F7lhIph3GEOmykD/status/1616384413721563136`,
+        `https://twitter.com/F7lhIph3GEOmykD/status/1616383353544151040`,
 
 
-        `https://twitter.com/Alpmtmsmi3826`,
         `https://twitter.com/alterations696`,
 
         // other
         `https://twitter.com/yukkuri_tnp`,
 
         `https://twitter.com/GrastonBerry`,
+        `https://twitter.com/GrastonBerry/status/1616295333486792706`,
         `https://twitter.com/GrastonBerry/status/1615863960074612738`,
         `https://twitter.com/GrastonBerry/status/1615808729152380928`,
         `https://twitter.com/GrastonBerry/status/1615777550642610182`,
