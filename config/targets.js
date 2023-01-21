@@ -55,7 +55,7 @@ module.exports = {
         `https://twitter.com/JRN64/status/1613462447821578250`,
 
         `https://twitter.com/IpsBu`,
-        `https://twitter.com/IpsBu/status/1616372721193226243`,
+        `https://twitter.com/IpsBu/status/1616416596154781697`,
         `https://twitter.com/IpsBu/status/1615985833483374592`,
         `https://twitter.com/IpsBu/status/1615945119865397250`,
         `https://twitter.com/IpsBu/status/1615903671480352768`,
@@ -79,13 +79,16 @@ module.exports = {
         // 23/01/15
         `https://twitter.com/Banme75273119`,
 
-        // 23/01/20
-        `https://twitter.com/AntoDorge`,
+        // 23/01/21
+        `https://twitter.com/ks6ona38s9zovyg`,
 
-        `https://twitter.com/F7lhIph3GEOmykD`,
-        `https://twitter.com/F7lhIph3GEOmykD/status/1616384854161240064`,
-        `https://twitter.com/F7lhIph3GEOmykD/status/1616384413721563136`,
-        `https://twitter.com/F7lhIph3GEOmykD/status/1616383353544151040`,
+        `https://twitter.com/_CMRA_`,
+
+        `https://twitter.com/HxOfsu`,
+        `https://twitter.com/HxOfsu/status/1616779008196100098`,
+        `https://twitter.com/HxOfsu/status/1616765553741291521`,
+        `https://twitter.com/HxOfsu/status/1616762728487477248`,
+        `https://twitter.com/HxOfsu/status/1616762264224411650`,
 
 
         `https://twitter.com/alterations696`,
