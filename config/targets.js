@@ -10,14 +10,6 @@ module.exports = {
         `https://twitter.com/Japan18420827/status/1599702904688226304`,
         `https://twitter.com/Japan18420827/status/1599349687576035329`,
 
-        // 22/12/08
-        `https://twitter.com/Revok51939878`,
-        `https://twitter.com/Revok51939878/status/1600647273603600384`,
-        `https://twitter.com/Revok51939878/status/1600575069658431560`,
-
-        `https://twitter.com/OcVqEgtgvmgbvHK`,
-        `https://twitter.com/OcVqEgtgvmgbvHK/status/1602753413284040708`,
-
         // 22/12/24
         `https://twitter.com/Ravens96319683`,
         `https://twitter.com/Ravens96319683/status/1606348757326364672`,
@@ -25,10 +17,6 @@ module.exports = {
         // 22/12/25
         `https://twitter.com/Mpmpwp20`,
         `https://twitter.com/Mpmpwp20/status/1607190125456551936`,
-
-        // 22/12/27
-        `https://twitter.com/Did_i_xrpxxirr`,
-        `https://twitter.com/Did_i_xrpxxirr/status/1607514517927497729`,
 
         // 22/12/31
         `https://twitter.com/Wa46n1_35`,
@@ -85,10 +73,26 @@ module.exports = {
         `https://twitter.com/_CMRA_`,
 
         `https://twitter.com/HxOfsu`,
+        `https://twitter.com/HxOfsu/status/1617453946339201024`,
+        `https://twitter.com/HxOfsu/status/1617453221001285633`,
+        `https://twitter.com/HxOfsu/status/1617451797941047296`,
+        `https://twitter.com/HxOfsu/status/1617143344781758465`,
+        `https://twitter.com/HxOfsu/status/1617023863526662146`,
         `https://twitter.com/HxOfsu/status/1616779008196100098`,
         `https://twitter.com/HxOfsu/status/1616765553741291521`,
         `https://twitter.com/HxOfsu/status/1616762728487477248`,
         `https://twitter.com/HxOfsu/status/1616762264224411650`,
+
+        `https://twitter.com/Revolut98434`,
+        `https://twitter.com/Revolut98434/status/1616806703105806344`,
+
+        // 23/01/23
+        `https://twitter.com/sui1911`,
+
+        // 23/01/24
+        `https://twitter.com/ip5mxMjhetHFlGO`,
+        `https://twitter.com/ip5mxMjhetHFlGO/status/1617799464743469058`,
+        `https://twitter.com/ip5mxMjhetHFlGO/status/1617754729228177408`,
 
 
         `https://twitter.com/alterations696`,
