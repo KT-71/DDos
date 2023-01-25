@@ -73,6 +73,7 @@ module.exports = {
         `https://twitter.com/_CMRA_`,
 
         `https://twitter.com/HxOfsu`,
+        `https://twitter.com/HxOfsu/status/1617975556859129856`,
         `https://twitter.com/HxOfsu/status/1617453946339201024`,
         `https://twitter.com/HxOfsu/status/1617453221001285633`,
         `https://twitter.com/HxOfsu/status/1617451797941047296`,
@@ -91,9 +92,12 @@ module.exports = {
 
         // 23/01/24
         `https://twitter.com/ip5mxMjhetHFlGO`,
+        `https://twitter.com/ip5mxMjhetHFlGO/status/1617853719235940354`,
         `https://twitter.com/ip5mxMjhetHFlGO/status/1617799464743469058`,
         `https://twitter.com/ip5mxMjhetHFlGO/status/1617754729228177408`,
 
+        // 23/01/25
+        `https://twitter.com/KoNmAymbQcdImzi`,
 
         `https://twitter.com/alterations696`,
 
