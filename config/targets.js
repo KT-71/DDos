@@ -43,6 +43,7 @@ module.exports = {
         `https://twitter.com/JRN64/status/1613462447821578250`,
 
         `https://twitter.com/IpsBu`,
+        `https://twitter.com/IpsBu/status/1618480443527155715`,
         `https://twitter.com/IpsBu/status/1616416596154781697`,
         `https://twitter.com/IpsBu/status/1615985833483374592`,
         `https://twitter.com/IpsBu/status/1615945119865397250`,
@@ -73,6 +74,12 @@ module.exports = {
         `https://twitter.com/_CMRA_`,
 
         `https://twitter.com/HxOfsu`,
+        `https://twitter.com/HxOfsu/status/1618244741593976832`,
+        `https://twitter.com/HxOfsu/status/1618178760532197376`,
+        `https://twitter.com/HxOfsu/status/1618166451722162177`,
+        `https://twitter.com/HxOfsu/status/1618166137417781248`,
+        `https://twitter.com/HxOfsu/status/1618162587463712768`,
+        `https://twitter.com/HxOfsu/status/1618161370767458305`,
         `https://twitter.com/HxOfsu/status/1617975556859129856`,
         `https://twitter.com/HxOfsu/status/1617453946339201024`,
         `https://twitter.com/HxOfsu/status/1617453221001285633`,
@@ -98,6 +105,14 @@ module.exports = {
 
         // 23/01/25
         `https://twitter.com/KoNmAymbQcdImzi`,
+
+        // 23/01/26
+        `https://twitter.com/Xi_iXkk`,
+        `https://twitter.com/Xi_iXkk/status/1618337015187267590`,
+        `https://twitter.com/Xi_iXkk/status/1618318007872421889`,
+
+        `https://twitter.com/Li_xir_nni`,
+
 
         `https://twitter.com/alterations696`,
 
