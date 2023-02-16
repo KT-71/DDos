@@ -10,14 +10,10 @@ module.exports = {
         `https://twitter.com/Japan18420827/status/1599702904688226304`,
         `https://twitter.com/Japan18420827/status/1599349687576035329`,
 
-        // 23/01/01
-        `https://twitter.com/Revich7`,
-        
-        // 23/01/08
-        `https://twitter.com/expressairk`,
-
         // 23/01/08
         `https://twitter.com/WcJOus1K3QYkDbR`,
+        `https://twitter.com/WcJOus1K3QYkDbR/status/1624565785657212928`,
+        `https://twitter.com/WcJOus1K3QYkDbR/status/1623923068350648320`,
         `https://twitter.com/WcJOus1K3QYkDbR/status/1623667606761734145`,
         `https://twitter.com/WcJOus1K3QYkDbR/status/1623646018117185536`,
         `https://twitter.com/WcJOus1K3QYkDbR/status/1623645718694203392`,
@@ -28,37 +24,10 @@ module.exports = {
         `https://twitter.com/WcJOus1K3QYkDbR/status/1622827533275103232`,
         `https://twitter.com/WcJOus1K3QYkDbR/status/1622661817968254981`,
 
-        // 23/01/15
-        `https://twitter.com/Banme75273119`,
-
         // 23/01/21
         `https://twitter.com/_CMRA_`,
 
-        `https://twitter.com/HxOfsu`,
-        `https://twitter.com/HxOfsu/status/1619695062774091782`,
-        `https://twitter.com/HxOfsu/status/1619693924146380801`,
-        `https://twitter.com/HxOfsu/status/1619601511167950848`,
-        `https://twitter.com/HxOfsu/status/1619292333455073281`,
-        `https://twitter.com/HxOfsu/status/1618906813503799298`,
-        `https://twitter.com/HxOfsu/status/1618244741593976832`,
-        `https://twitter.com/HxOfsu/status/1618178760532197376`,
-        `https://twitter.com/HxOfsu/status/1618166451722162177`,
-        `https://twitter.com/HxOfsu/status/1618166137417781248`,
-        `https://twitter.com/HxOfsu/status/1618162587463712768`,
-        `https://twitter.com/HxOfsu/status/1618161370767458305`,
-        `https://twitter.com/HxOfsu/status/1617975556859129856`,
-        `https://twitter.com/HxOfsu/status/1617453946339201024`,
-        `https://twitter.com/HxOfsu/status/1617453221001285633`,
-        `https://twitter.com/HxOfsu/status/1617451797941047296`,
-        `https://twitter.com/HxOfsu/status/1617143344781758465`,
-        `https://twitter.com/HxOfsu/status/1617023863526662146`,
-        `https://twitter.com/HxOfsu/status/1616779008196100098`,
-        `https://twitter.com/HxOfsu/status/1616765553741291521`,
-        `https://twitter.com/HxOfsu/status/1616762728487477248`,
-        `https://twitter.com/HxOfsu/status/1616762264224411650`,
-
         `https://twitter.com/Revolut98434`,
-        `https://twitter.com/Revolut98434/status/1616806703105806344`,
 
         // 23/01/23
         `https://twitter.com/sui1911`,
@@ -103,6 +72,13 @@ module.exports = {
         `https://twitter.com/hUuNBS9x1ivG7Z5/status/1621111090456432645`,
 
         `https://twitter.com/UMaxXqHgQ9qO2ce`,
+        `https://twitter.com/UMaxXqHgQ9qO2ce/status/1624496231169855495`,
+        `https://twitter.com/UMaxXqHgQ9qO2ce/status/1624495578087407618`,
+        `https://twitter.com/UMaxXqHgQ9qO2ce/status/1624244213289287680`,
+        `https://twitter.com/UMaxXqHgQ9qO2ce/status/1624139364732178464`,
+        `https://twitter.com/UMaxXqHgQ9qO2ce/status/1624009516613238785`,
+        `https://twitter.com/UMaxXqHgQ9qO2ce/status/1623924148174196741`,
+        `https://twitter.com/UMaxXqHgQ9qO2ce/status/1623923964400791552`,
         `https://twitter.com/UMaxXqHgQ9qO2ce/status/1622913513738981376`,
         `https://twitter.com/UMaxXqHgQ9qO2ce/status/1622913298638290945`,
         `https://twitter.com/UMaxXqHgQ9qO2ce/status/1622257032416923651`,
@@ -113,6 +89,20 @@ module.exports = {
         `https://twitter.com/5Pnq09G9eOfbZRf`,
         `https://twitter.com/5Pnq09G9eOfbZRf/status/1623649783406632961`,
         `https://twitter.com/5Pnq09G9eOfbZRf/status/1623239542353575937`,
+
+        // 23/02/12
+        `https://twitter.com/AbandonJ5`,
+        `https://twitter.com/AbandonJ5/status/1625856571115962370`,
+        `https://twitter.com/AbandonJ5/status/1625704156559204352`,
+        `https://twitter.com/AbandonJ5/status/1625439485411614721`,
+        `https://twitter.com/AbandonJ5/status/1625439312736301056`,
+        `https://twitter.com/AbandonJ5/status/1624494720696324096`,
+
+        // 23/02/14
+        `https://twitter.com/ArkLenovo`,
+        `https://twitter.com/ArkLenovo/status/1625857346571497475`,
+        `https://twitter.com/ArkLenovo/status/1625703344852332546`,
+        `https://twitter.com/ArkLenovo/status/1625441604432498688`,
 
 
         `https://twitter.com/alterations696`,
