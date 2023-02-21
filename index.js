@@ -206,6 +206,7 @@ const initBotChrome = async (login, targets, realUsername) => {
             // pop target url
             // target = waitList.shift().trim();
             target = waitList.pop().trim();
+            if (target && dieList.includes(target)) { target = null; }
             if (target) { await driver.get(target); }
         }
 
