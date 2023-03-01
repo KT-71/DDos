@@ -1,6 +1,6 @@
 module.exports = {
 
-    realUsername: `kis_kirrrrrr`,   // real user's username
+    // realUsername: `kis_kirrrrrr`,   // real user's username
 
     // fake user
     targets: [
@@ -67,13 +67,10 @@ module.exports = {
         `https://twitter.com/UMaxXqHgQ9qO2ce/status/1622140497689985024`,
         `https://twitter.com/UMaxXqHgQ9qO2ce/status/1622107724677894144`,
 
-        // 23/02/08
-        `https://twitter.com/5Pnq09G9eOfbZRf`,
-        `https://twitter.com/5Pnq09G9eOfbZRf/status/1623649783406632961`,
-        `https://twitter.com/5Pnq09G9eOfbZRf/status/1623239542353575937`,
-
         // 23/02/17
         `https://twitter.com/9DxmWobTnoZ0ZEz`,
+        `https://twitter.com/9DxmWobTnoZ0ZEz/status/1630543052032061441`,
+        `https://twitter.com/9DxmWobTnoZ0ZEz/status/1630227652018835456`,
         `https://twitter.com/9DxmWobTnoZ0ZEz/status/1629656127074910210`,
         `https://twitter.com/9DxmWobTnoZ0ZEz/status/1629655928650727424`,
         `https://twitter.com/9DxmWobTnoZ0ZEz/status/1629409898554589185`,
@@ -84,12 +81,11 @@ module.exports = {
 
         // 23/02/20
         `https://twitter.com/DBMS75203480`,
+        `https://twitter.com/DBMS75203480/status/1630220168214315010`,
         `https://twitter.com/DBMS75203480/status/1628381603570278401`,
 
         // 23/02/21
         `https://twitter.com/Arbarton2`,
-
-        `https://twitter.com/FhkdptLLyQqtVWM`,
 
         `https://twitter.com/A55rmtmtjt`,
         `https://twitter.com/A55rmtmtjt/status/1629200572644458497`,
@@ -97,13 +93,6 @@ module.exports = {
         `https://twitter.com/A55rmtmtjt/status/1629090145122021382`,
         `https://twitter.com/A55rmtmtjt/status/1628736079900860422`,
         `https://twitter.com/A55rmtmtjt/status/1628734664713318402`,
-
-        `https://twitter.com/GGamtes`,
-        `https://twitter.com/GGamtes/status/1630069680856522755`,
-        `https://twitter.com/GGamtes/status/1629833568468738050`,
-        `https://twitter.com/GGamtes/status/1628038741649461249`,
-        `https://twitter.com/GGamtes/status/1627780642984570880`,
-        `https://twitter.com/GGamtes/status/1627707507140427777`,
 
         `https://twitter.com/invield`,
         `https://twitter.com/invield/status/1630071818873864192`,
@@ -118,25 +107,21 @@ module.exports = {
         `https://twitter.com/invield/status/1627093534569549824`,
         `https://twitter.com/invield/status/1627062199910043650`,
         `https://twitter.com/invield/status/1627031448535584770`,
+        `https://twitter.com/invield/status/1630543604283310080`,
+        `https://twitter.com/invield/status/1630494072455479297`,
+        `https://twitter.com/invield/status/1630493871032467457`,
 
         `https://twitter.com/8T9MVHafrknzRhL`,
 
-        `https://twitter.com/Tsu222_a`,
-        `https://twitter.com/Tsu222_a/status/1630070356504371201`,
-        `https://twitter.com/Tsu222_a/status/1629812189023334400`,
-        `https://twitter.com/Tsu222_a/status/1629812002276220930`,
-        `https://twitter.com/Tsu222_a/status/1629654905043529729`,
-        `https://twitter.com/Tsu222_a/status/1629487305944887296`,
-        `https://twitter.com/Tsu222_a/status/1629414336639942661`,
-        `https://twitter.com/Tsu222_a/status/1628101960455815202`,
-        `https://twitter.com/Tsu222_a/status/1628040304946208769`,
-        `https://twitter.com/Tsu222_a/status/1627932307628908544`,
-        `https://twitter.com/Tsu222_a/status/1627931720816418816`,
-
         `https://twitter.com/NjoObmJDGl4gXUp`,
+        `https://twitter.com/NjoObmJDGl4gXUp/status/1630500284039413760`,
+        `https://twitter.com/NjoObmJDGl4gXUp/status/1630264254988455936`,
+        `https://twitter.com/NjoObmJDGl4gXUp/status/1630263762317094913`,
+        `https://twitter.com/NjoObmJDGl4gXUp/status/1630232582284533761`,
+        `https://twitter.com/NjoObmJDGl4gXUp/status/1630232403850477570`,
+        `https://twitter.com/NjoObmJDGl4gXUp/status/1630165805504647168`,
         `https://twitter.com/NjoObmJDGl4gXUp/status/1628964573318373376`,
         `https://twitter.com/NjoObmJDGl4gXUp/status/1628937774924455937`,
-        `https://twitter.com/NjoObmJDGl4gXUp/status/1628937444761432064`,
         `https://twitter.com/NjoObmJDGl4gXUp/status/1628809397085392896`,
         `https://twitter.com/NjoObmJDGl4gXUp/status/1627098499408953346`,
         `https://twitter.com/NjoObmJDGl4gXUp/status/1627121787430481922`,
@@ -146,6 +131,10 @@ module.exports = {
 
         // 23/02/22
         `https://twitter.com/P7dIAv8TBQp0UQJ`,
+        `https://twitter.com/P7dIAv8TBQp0UQJ/status/1630492381895073793`,
+        `https://twitter.com/P7dIAv8TBQp0UQJ/status/1630492039274979328`,
+        `https://twitter.com/P7dIAv8TBQp0UQJ/status/1630161152654147586`,
+        `https://twitter.com/P7dIAv8TBQp0UQJ/status/1630160911712374784`,
         `https://twitter.com/P7dIAv8TBQp0UQJ/status/1630123158593236995`,
         `https://twitter.com/P7dIAv8TBQp0UQJ/status/1628732120880279552`,
         `https://twitter.com/P7dIAv8TBQp0UQJ/status/1628662273588793344`,
@@ -157,14 +146,13 @@ module.exports = {
 
         // 23/02/23
         `https://twitter.com/AiRei85403161`,
+        `https://twitter.com/AiRei85403161/status/1630494637067517954`,
         `https://twitter.com/AiRei85403161/status/1628810298328027138`,
         `https://twitter.com/AiRei85403161/status/1628733639893606400`,
 
         // 23/02/25
-        `https://twitter.com/T_kk_s11`,
-        
         `https://twitter.com/sZ1LrxeT8S8zBAX`,
-        
+
         // 23/02/26
         `https://twitter.com/9jVuuCiIoyzdgpl`,
 
@@ -173,8 +161,18 @@ module.exports = {
 
         `https://twitter.com/186sYhFoCY3LJjl`,
 
-        // 23/02/27
-        `https://twitter.com/Sth_565`,
+        // 23/03/01
+        `https://twitter.com/jwtjmnjejdaktm`,
+        `https://twitter.com/jwtjmnjejdaktm/status/1630542308646191106`,
+
+        `https://twitter.com/Tsu_kxit`,
+        `https://twitter.com/Tsu_kxit/status/1630630892728369155`,
+        `https://twitter.com/Tsu_kxit/status/1630630490159058944`,
+        `https://twitter.com/Tsu_kxit/status/1630490449143119872`,
+        `https://twitter.com/Tsu_kxit/status/1630489848250286080`,
+        `https://twitter.com/Tsu_kxit/status/1630344618679173120`,
+        `https://twitter.com/Tsu_kxit/status/1630344119456243714`,
+        `https://twitter.com/Tsu_kxit/status/1630181114634534912`,
 
 
         `https://twitter.com/alterations696`,
