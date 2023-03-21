@@ -204,8 +204,8 @@ const initBotChrome = async (login, targets, realUsername) => {
         if (target == null && waitList.length > 0 &&
             loginStatus == 2 && url != `https://twitter.com/i/flow/login`) {
             // pop target url
-            // target = waitList.shift().trim();
-            target = waitList.pop().trim();
+            target = waitList.shift().trim();
+            // target = waitList.pop().trim();
             if (target && dieList.includes(target)) { target = null; }
             if (target) { await driver.get(target); }
         }
@@ -223,6 +223,15 @@ const initBotChrome = async (login, targets, realUsername) => {
 
                 await sleep(delay);
 
+                if (!/https:\/\/twitter\.com\/\S+\/status\/\d+/.test(target)) {
+                    for (let tar of waitList) {
+                        if (tar.startsWith(target)) {
+                            dieList.push(tar);
+                            console.log(tar)
+                        }
+                    }
+                }
+                console.log(target)
                 dieList.push(target);
                 doneList.push(target);
                 target = null;
@@ -587,14 +596,18 @@ const main = async () => {
 
     // main var
     const { logins } = require(`./config/login.js`);
-    const { targets, realUsername } = require(`./config/targets.js`);
+    let { targets, realUsername } = require(`./config/targets.js`);
     let doneList = [], dieList = [];
     for (let login of logins) {
         let lists = await initBotChrome(login, targets, realUsername);
-        doneList = doneList.concat(lists.doneList);
-        dieList = dieList.concat(lists.dieList);
-        doneList = doneList.filter((ele, i) => (doneList.indexOf(ele) === i));
-        dieList = dieList.filter((ele, i) => (dieList.indexOf(ele) === i));
+
+        for (let done of lists.doneList) {
+            if (!doneList.includes(done)) { doneList.push(done); }
+        }
+        for (let die of lists.dieList) {
+            if (!dieList.includes(die)) { dieList.push(die); }
+        }
+        targets = targets.filter((tar) => (!dieList.includes(tar)));
     }
 
     console.clear();
