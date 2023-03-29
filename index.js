@@ -81,7 +81,10 @@ const initBotChrome = async (login, targets, realUsername) => {
 
     let elements = [], loginStatus = 0, refresh = 0;
     while (1) {
-        let url = await driver.getCurrentUrl().catch(() => { }) || 'null';
+        let url = await driver.getCurrentUrl().catch(() => { return 'quit' }) || 'null';
+
+        // quit by user
+        if (url == `quit`) { return { doneList, dieList }; }
 
         console.log(`[${userNum}] ${doneList.length}/${targets.length}`);
 
