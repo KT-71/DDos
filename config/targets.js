@@ -14,8 +14,6 @@ module.exports = {
         // 23/01/21
         `https://twitter.com/_CMRA_`,
 
-        `https://twitter.com/Revolut98434`,
-
         // 23/01/23
         `https://twitter.com/sui1911`,
 
@@ -56,36 +54,17 @@ module.exports = {
         `https://twitter.com/2479IRLsGcpNNXh/status/1640725073173839872`,
         `https://twitter.com/2479IRLsGcpNNXh/status/1640493923943497731`,
 
-        // 23/03/29
-        `https://twitter.com/XzKPmngAe4RQWWA`,
-        `https://twitter.com/XzKPmngAe4RQWWA/status/1641648545139683329`,
-        `https://twitter.com/XzKPmngAe4RQWWA/status/1641160469929967625`,
-
-        // 23/03/30
-        `https://twitter.com/Tjt3sm5m`,
-        `https://twitter.com/Tjt3sm5m/status/1641652389760454656`,
-        `https://twitter.com/Tjt3sm5m/status/1641651998817755136`,
-        `https://twitter.com/Tjt3sm5m/status/1641420291032199171`,
-        `https://twitter.com/Tjt3sm5m/status/1641208903680634881`,
-        `https://twitter.com/Tjt3sm5m/status/1641207540225568768`,
-
-        `https://twitter.com/QAxi7a5Y29XSJlZ`,
-        `https://twitter.com/QAxi7a5Y29XSJlZ/status/1641419336697933824`,
-        `https://twitter.com/QAxi7a5Y29XSJlZ/status/1641204014854602753`,
-        `https://twitter.com/QAxi7a5Y29XSJlZ/status/1641201748961558529`,
-
         // 23/03/31
         `https://twitter.com/vSacr9MyRY0PpyA`,
         `https://twitter.com/vSacr9MyRY0PpyA/status/1641654312890777602`,
 
-        `https://twitter.com/KHGkdufYwonOBTZ`,
-        `https://twitter.com/KHGkdufYwonOBTZ/status/1641565911483322368`,
+        // 23/04/05
+        `https://twitter.com/ieM71395c5biXhU`,
+        `https://twitter.com/ieM71395c5biXhU/status/1643413028736495619`,
 
-        `https://twitter.com/2owG54bdszlBdHe`,
-        `https://twitter.com/2owG54bdszlBdHe/status/1641570378752618496`,
-
-        `https://twitter.com/vXwqLRzP2BoYbdV`,
-        `https://twitter.com/vXwqLRzP2BoYbdV/status/1641657360639819777`,
+        `https://twitter.com/gxpKbTmNkaZJprj`,
+        `https://twitter.com/gxpKbTmNkaZJprj/status/1643413609429467136`,
+        `https://twitter.com/gxpKbTmNkaZJprj/status/1643220290359504896`,
 
 
         `https://twitter.com/alterations696`,
