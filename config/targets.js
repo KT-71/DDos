@@ -47,39 +47,32 @@ module.exports = {
         `https://twitter.com/yDoSU8rgoR731/status/1639345027230089217`,
         `https://twitter.com/yDoSU8rgoR731/status/1639344296758505472`,
 
-        // 23/03/28
-        `https://twitter.com/2479IRLsGcpNNXh`,
-        `https://twitter.com/2479IRLsGcpNNXh/status/1641172894184099842`,
-        `https://twitter.com/2479IRLsGcpNNXh/status/1640900336381485057`,
-        `https://twitter.com/2479IRLsGcpNNXh/status/1640725073173839872`,
-        `https://twitter.com/2479IRLsGcpNNXh/status/1640493923943497731`,
-
         // 23/03/31
         `https://twitter.com/vSacr9MyRY0PpyA`,
         `https://twitter.com/vSacr9MyRY0PpyA/status/1641654312890777602`,
 
-        // 23/04/05
-        `https://twitter.com/ieM71395c5biXhU`,
-        `https://twitter.com/ieM71395c5biXhU/status/1643413028736495619`,
+        // 23/04/10
+        `https://twitter.com/zd5iEoSwUZUMpmH`,
+        `https://twitter.com/zd5iEoSwUZUMpmH/status/1645202397478649856`,
+        `https://twitter.com/zd5iEoSwUZUMpmH/status/1645017935356755969`,
 
-        `https://twitter.com/gxpKbTmNkaZJprj`,
-        `https://twitter.com/gxpKbTmNkaZJprj/status/1643413609429467136`,
-        `https://twitter.com/gxpKbTmNkaZJprj/status/1643220290359504896`,
+        `https://twitter.com/Fzo1u9gFS8UdZKV`,
+        `https://twitter.com/Fzo1u9gFS8UdZKV/status/1645208792689254402`,
+        `https://twitter.com/Fzo1u9gFS8UdZKV/status/1645208109474893833`,
+        `https://twitter.com/Fzo1u9gFS8UdZKV/status/1645020623427493888`,
+
+        `https://twitter.com/AlEZ2gdKDmAdN7y`,
+        `https://twitter.com/AlEZ2gdKDmAdN7y/status/1645209668606730241`,
+        `https://twitter.com/AlEZ2gdKDmAdN7y/status/1645209461877768198`,
 
 
         `https://twitter.com/alterations696`,
 
         // other
         `https://twitter.com/GrastonBerry`,
-        `https://twitter.com/GrastonBerry/status/1210892362500599809`,
-        `https://twitter.com/GrastonBerry/status/1638188859807903744`,
-        `https://twitter.com/GrastonBerry/status/1638183279823306753`,
-        `https://twitter.com/GrastonBerry/status/1638177859641704449`,
-        `https://twitter.com/GrastonBerry/status/1632207778436775937`,
-        `https://twitter.com/GrastonBerry/status/1630640656971620352`,
-        `https://twitter.com/GrastonBerry/status/1630624903908196352`,
-        `https://twitter.com/GrastonBerry/status/1630473581888143360`,
-        `https://twitter.com/GrastonBerry/status/1630393073015615488`,
+        `https://twitter.com/GrastonBerry/status/1644866393484201984`,
+        `https://twitter.com/GrastonBerry/status/1640966778737287168`,
+        `https://twitter.com/GrastonBerry/status/1640875289990553600`,
         //*/
     ]
 }
