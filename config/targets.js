@@ -350,6 +350,8 @@ module.exports = {
         `https://twitter.com/Mg9owtX83o85105/status/1651914968294653954`,
 
         `https://twitter.com/KXtlO78Vnx17342`,
+        `https://twitter.com/KXtlO78Vnx17342/status/1654089839011323905`,
+        `https://twitter.com/KXtlO78Vnx17342/status/1654089268170739718`,
         `https://twitter.com/KXtlO78Vnx17342/status/1653699374721974272`,
         `https://twitter.com/KXtlO78Vnx17342/status/1652999281316339713`,
         `https://twitter.com/KXtlO78Vnx17342/status/1652998740247019521`,
@@ -385,10 +387,8 @@ module.exports = {
 
         // 23/05/04
         `https://twitter.com/reim76oropp95`,
+        `https://twitter.com/reim76oropp95/status/1654151832451645442`,
         `https://twitter.com/reim76oropp95/status/1653898796990963714`,
-
-        `https://twitter.com/khKafkkSXE81396`,
-        `https://twitter.com/khKafkkSXE81396/status/1653902304796442627`,
 
         `https://twitter.com/ens646shi41866`,
 
@@ -398,27 +398,8 @@ module.exports = {
         `https://twitter.com/eirato245904/status/1653003576489246720`,
         `https://twitter.com/eirato245904/status/1653003013617856512`,
 
-        `https://twitter.com/aqAvhUEswh98370`,
-        `https://twitter.com/aqAvhUEswh98370/status/1653890078601781249`,
-        `https://twitter.com/aqAvhUEswh98370/status/1653889486022131712`,
-        `https://twitter.com/aqAvhUEswh98370/status/1653655969329725441`,
-        `https://twitter.com/aqAvhUEswh98370/status/1653655513119469568`,
-        `https://twitter.com/aqAvhUEswh98370/status/1653414125811437568`,
-        `https://twitter.com/aqAvhUEswh98370/status/1653413359063273472`,
-        `https://twitter.com/aqAvhUEswh98370/status/1653262380632281088`,
-        `https://twitter.com/aqAvhUEswh98370/status/1653261717240176640`,
-
-        `https://twitter.com/aika76866875903`,
-        `https://twitter.com/aika76866875903/status/1653891913580158979`,
-        `https://twitter.com/aika76866875903/status/1653891271704956929`,
-        `https://twitter.com/aika76866875903/status/1653654550341877761`,
-        `https://twitter.com/aika76866875903/status/1653654085441134593`,
-        `https://twitter.com/aika76866875903/status/1653415507687768065`,
-        `https://twitter.com/aika76866875903/status/1653415054992363522`,
-        `https://twitter.com/aika76866875903/status/1653263760105132032`,
-        `https://twitter.com/aika76866875903/status/1653263118439522306`,
-
         `https://twitter.com/To525juTo43502`,
+        `https://twitter.com/To525juTo43502/status/1654150777106051073`,
         `https://twitter.com/To525juTo43502/status/1653897351545909250`,
         `https://twitter.com/To525juTo43502/status/1653896669405282307`,
 
@@ -433,27 +414,15 @@ module.exports = {
         `https://twitter.com/LzypzGLalf7843/status/1653265199779008513`,
         `https://twitter.com/LzypzGLalf7843/status/1653264755165917185`,
 
-        `https://twitter.com/Limpw6the126113`,
-        `https://twitter.com/Limpw6the126113/status/1653890729888952322`,
-        `https://twitter.com/Limpw6the126113/status/1653888939739041799`,
-        `https://twitter.com/Limpw6the126113/status/1653649796127653888`,
-        `https://twitter.com/Limpw6the126113/status/1653648991567896580`,
-        `https://twitter.com/Limpw6the126113/status/1653412232821190657`,
-        `https://twitter.com/Limpw6the126113/status/1653410938500857856`,
-
         `https://twitter.com/L189223757791`,
 
-        `https://twitter.com/IWoBNMJup629521`,
-        `https://twitter.com/IWoBNMJup629521/status/1653888269749485570`,
-        `https://twitter.com/IWoBNMJup629521/status/1653887431274532865`,
-        `https://twitter.com/IWoBNMJup629521/status/1653645090827427840`,
-        `https://twitter.com/IWoBNMJup629521/status/1653643387088535553`,
-
         `https://twitter.com/Got634905342795`,
+        `https://twitter.com/Got634905342795/status/1654152441678446599`,
         `https://twitter.com/Got634905342795/status/1653910098446790656`,
         `https://twitter.com/Got634905342795/status/1653909129851961344`,
 
         `https://twitter.com/6mCFGjE3o619665`,
+        `https://twitter.com/6mCFGjE3o619665/status/1654152924090490881`,
         `https://twitter.com/6mCFGjE3o619665/status/1653912960618876929`,
 
 
