@@ -57,7 +57,7 @@ const randomPick = (items) => {
 
 // bot logic
 const initBotChrome = async (login, targets, realUsername) => {
-    const delay = 350;
+    const delay = 100;
     const userNum = require(`./config/login.js`).logins.indexOf(login);
 
     // chrome
@@ -506,7 +506,62 @@ const initBotChrome = async (login, targets, realUsername) => {
     }
 }
 
+// check new target list
+const checkNewList = () => {
+    const newListPath = `./config/newlist.js`;
+    if (!fs.existsSync(newListPath)) { return false; }
+
+
+    let rawList = fs.readFileSync(newListPath, { encoding: 'utf8', flag: 'r' });
+    rawList = rawList.split('\n');
+
+    let newList = [];
+    for (let raw of rawList) {
+        let line = raw.trim();
+        if (line == '') { continue; }
+
+        if (line.startsWith('[+] ')) {
+            line = line.replace('[+] ', 'https://twitter.com/');
+
+            newList.push(`\`${line}\`,`);
+            continue;
+        }
+
+        if (/^https:\/\/twitter\.com\/\S+\/status\/\d+/.test(line)) {
+
+            newList.push(`\`${line}\`,`);
+            continue;
+        }
+    }
+    newList = newList.filter((ele, i, arr) => { return arr.indexOf(ele) === i; });
+    newList.sort();
+    newList.reverse();
+
+    let newTargets = [], oldTargets = [];
+    let username = '', newTarget = false;
+    for (let line of newList) {
+        [, uname, statu] = line.match(/https:\/\/twitter\.com\/([^\/`]+)(\/status\/)?(\d+)?/i) || [,];
+
+        if (username != uname) {
+            newTarget = !!statu;
+            newTarget ? oldTargets.push(``) : newTargets.push(``);
+        }
+        newTarget ? oldTargets.push(line) : newTargets.push(line);
+
+        username = uname;
+    }
+
+    fs.writeFileSync(newListPath, oldTargets.join('\n') + `\n\n` + newTargets.join('\n'));
+
+    if (newList.length == 0) { return false; }
+    child_process.execSync(`notepad.exe ${newListPath}`).toString();
+    return true;
+}
+
+
 const main = async () => {
+    if (checkNewList()) { return; }
+
     // 檢查登入資訊
     const loginPath = `./config/login.js`;
     if (!fs.existsSync(loginPath)) {
