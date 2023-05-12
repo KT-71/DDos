@@ -509,11 +509,13 @@ const initBotChrome = async (login, targets, realUsername) => {
 // check new target list
 const checkNewList = () => {
     const newListPath = `./config/newlist.js`;
+    const oldListPath = `./config/targets.js`;
     if (!fs.existsSync(newListPath)) { return false; }
 
+    const regUrl = /https:\/\/twitter\.com\/([^\/`]+)(\/status\/)?(\d+)?/i;
 
-    let rawList = fs.readFileSync(newListPath, { encoding: 'utf8', flag: 'r' });
-    rawList = rawList.split('\n');
+    let rawData = fs.readFileSync(newListPath, { encoding: 'utf8', flag: 'r' });
+    let rawList = rawData.split('\n');
 
     let newList = [];
     for (let raw of rawList) {
@@ -537,30 +539,55 @@ const checkNewList = () => {
     newList.sort();
     newList.reverse();
 
-    let newTargets = [], oldTargets = [];
-    let username = '', newTarget = false;
-    for (let line of newList) {
-        [, uname, statu] = line.match(/https:\/\/twitter\.com\/([^\/`]+)(\/status\/)?(\d+)?/i) || [,];
 
-        if (username != uname) {
-            newTarget = !!statu;
-            newTarget ? oldTargets.push(``) : newTargets.push(``);
+
+    // output
+    rawData = fs.readFileSync(oldListPath, { encoding: 'utf8', flag: 'r' });
+    rawList = rawData.split(/\r?\n/);
+
+    let username = '', lastIndex = 0;
+    {
+        let now = new Date(Date.now());
+        let nowYear = now.getYear() % 100;
+        let nowMonth = now.getMonth() + 1; nowMonth = nowMonth.toString().padStart(2, '0');
+        let nowDate = now.getDate(); nowDate = nowDate.toString().padStart(2, '0');
+
+        let date = `        \/\/ ${nowYear}\/${nowMonth}\/${nowDate}`
+        if (!rawList.includes(date)) {
+            lastIndex = rawList.indexOf(`        \/\/ other`);
+            lastIndex -= 1;
+            rawList.splice(lastIndex, 0, date);
         }
-        newTarget ? oldTargets.push(line) : newTargets.push(line);
-
-        username = uname;
     }
 
-    fs.writeFileSync(newListPath, oldTargets.join('\n') + `\n\n` + newTargets.join('\n'));
+    for (let _line of newList) {
+        let line = `        ${_line}`;
+        if (rawList.includes(line)) { continue; }
 
-    if (newList.length == 0) { return false; }
-    child_process.execSync(`notepad.exe ${newListPath}`).toString();
-    return true;
+        let [, uname, statu, tID] = _line.match(regUrl) || [, , ,];
+
+        // new usermane
+        if (username != uname) {
+            username = uname;
+            let found = rawList.find(ele => ele.includes(`\`https:\/\/twitter\.com\/${username}\``));
+            if (found) {
+                lastIndex = rawList.indexOf(found) + 1;
+            } else {
+                lastIndex = rawList.indexOf(`        \/\/ other`) - 1;
+                rawList.splice(lastIndex, 0, ``);
+            }
+        }
+        rawList.splice(lastIndex, 0, line);
+        lastIndex++;
+    }
+
+    fs.writeFileSync(oldListPath, rawList.join('\n'));
+    fs.writeFileSync(newListPath, '');
 }
 
 
 const main = async () => {
-    if (checkNewList()) { return; }
+    checkNewList()
 
     // 檢查登入資訊
     const loginPath = `./config/login.js`;
